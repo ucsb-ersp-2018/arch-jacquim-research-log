@@ -8,7 +8,7 @@
 * Record ERSP preliminary thoughts
 * Reflect on research logs
 
-**Tuesday, Oct 1 (1.5 hrs)
+**Tuesday, Oct 1 (1.5 hrs)**
 
 * Set up log
 * ERSP initial thoughts
