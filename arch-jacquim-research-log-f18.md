@@ -1,7 +1,6 @@
 
 # Week 1 (9/27-10/3)
 ---
----
 **Goals:**
 
 * Set up research log
@@ -16,7 +15,7 @@
 * Log reflection
 
 *ERSP Initial Thoughts*
---
+
 1. This is what I'm most excited about in ERSP:
 
 I'm most excited to learn the process of research and work in a team to develop a project. I'm looking forward to learning a new subject and, at the same time, apply it to a specific problem. While I'm relatively new to computer science in general, I feel like I've spent a long time on foundational material without actually applying it in a meaningful setting. It's exciting to think about how I'll be collecting real information and learning how to write an academic engineering paper. I think, with ERSP, I'll feel more experienced and confident about my ability to contribute to the tech world.
@@ -26,7 +25,7 @@ I'm most excited to learn the process of research and work in a team to develop 
 I don't have any experience in computer architecture, and I'm worried I'll have to struggle to keep up when I'm introduced to these new topics. Research in general seems like an intimidating and cryptic process, so while I'm excited to have the opportunity to unravel it, I'm also concerned that I won't work well enough to support the rest of my team members.
 
 *Log Reflection*
---
+
 1. How did the logs differ in style? What advantages are there in one style over another?
 
 In terms of layout, Miranda Parker's log was definitely a lot more advanced (expecially the organized intro with important links at the top), while Adrian Mendoza's was more basic and linear. They both had a similar format, however, starting each week with a list of goals and discussing what they accomplished every day. Jessica's writing was very casual, while Adrian's was more concise. I think Jessica's style has some advantages in that she presents a very clear summary of the project up front with some of the material that was important to the project,and her writing style was very readable. Adrian's is less 'flashy' but, since it was done as part of an ERSP project as well, seems more familiar. It's also interesting to see his progress in research and the ERSP program itself over the course of his log.
