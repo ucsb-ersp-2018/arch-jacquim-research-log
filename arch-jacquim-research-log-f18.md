@@ -7,6 +7,22 @@
 * Attend research group meeting on Friday when scheduled, record attendance
 * Record ERSP preliminary thoughts
 * Reflect on research logs
+* Read Research Paper Prep by Friday (take notes)
+* Get started on reading research paper for Team Sherwood for next Wednesday
+
+**Wednesday, Oct 3 (2 hrs)**
+-To Do-
+  * Schedule a weekly time for group to meet
+  
+ -Important Things I Did Today-
+ 
+ * Built the noicest spaghetti house this side of Pastatown. It didn't actually stand (at all), but it was a real team effort. It might have been better if we had actually slowed down and planned it out first, so note taken there, but overall it was really exciting to get to know my teammates through this challenge. I think we did a good job of listening to everyone's ideas, picking the one we thought sounded best, and making sure everyone was involved in the construction. Next time, though, we definitely need a better foundation. Those pasta legs were not doing it.
+ 
+ * Read the rest of the intro to ERSP letters from past students- learned importance of time management and working with team members and grad students
+ 
+ * Formed a group chat with teammates Maggie, Dylan, and Dawit. We're working on finding a good time to meet every week (probably Fridays), though of course this may shift around as the project progresses. Dylan created an online calendar we all put our free times into, so that's a good weekly reference.
+ [When to Meet? Calendar](https://www.when2meet.com/?7163758-lOIkc)
+ 
 
 **Tuesday, Oct 1 (1.5 hrs)**
 
