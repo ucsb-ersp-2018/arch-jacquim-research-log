@@ -11,6 +11,7 @@
 * Get started on reading research paper for Team Sherwood for next Wednesday
 
 **Wednesday, Oct 3 (2 hrs)**
+
 -To Do-
   * Schedule a weekly time for group to meet
   
