@@ -10,6 +10,18 @@
 * Read Research Paper Prep by Friday (take notes)
 * Get started on reading research paper for Team Sherwood for next Wednesday
 
+**Saturday, Oct 6 (2.5 hrs)**
+
+-To Do-
+..* Get started on reading the assigned research paper before the end of the weekend
+
+-Things I Did-
+
+* Read "How to Read a Research Paper" and took notes. Takeaways: Marking up papers is very helpful, keep notes as you answer the 5 key questions
+..* I'm thinking as we read different papers, we could keep a list of the summaries of each along with their citations so we have them ready to go when we want to use them
+* Met up with team for dinner- We've officially scheduled our team meetings for Wednesdays 1:00pm-3:00pm at the library, though we can meet for more time later on. Location is fairly flexible as well. Also contacted Mai and Professor Sherwood to set up weekly meetings. If all goes as planned, our meetings with Mai will be on Wednesday right before class (3:00-3:30pm), and we'll meet Sherwood and/or his grad students sometime on Friday. His lab hours are also on Friday, but I'm not sure when, so we'll have to fit the meeting in around the labs and our classes. 
+* Updated the group page with group meeting times and link to my research log. In hindsight, I probably should've just added links to everyone's logs at once, but I didn't know I would have to wait for the merge request to be accepted oops.
+
 **Wednesday, Oct 3 (2 hrs)**
 
 -To Do-
