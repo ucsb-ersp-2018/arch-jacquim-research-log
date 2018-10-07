@@ -13,6 +13,7 @@
 **Saturday, Oct 6 (2.5 hrs)**
 
 -To Do-
+
 ..* Get started on reading the assigned research paper before the end of the weekend
 
 -Things I Did-
