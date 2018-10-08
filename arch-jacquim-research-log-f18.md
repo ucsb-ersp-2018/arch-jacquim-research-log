@@ -10,7 +10,7 @@
 * Read Research Paper Prep by Friday (take notes)
 * Get started on reading research paper for Team Sherwood for next Wednesday
 
-**Sunday, Oct 7 (1.5 hrs)**
+**Sunday, Oct 7 (2.5 hrs)**
 
 * Started reading assigned Computer Architecture paper- "A Pythonic Approach for Rapid Hardware Prototyping and Instrumentation" and answering questions about each part. So far, paper seems to be about the implementation of the PyRTL language as an easier way to do hardware design without requiring a deep knowledge of hardware, or the steep learning curve of traditional hardware design languages (HDLs). Will be continued tomorrow, with more notes.
 
