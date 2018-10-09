@@ -1,17 +1,18 @@
 # Week 3 (10/11-10/17)
 **Goals:**
-- [] First meeting with Professor Sherwood this Friday- ask about lab hours
+- [ ] First meeting with Professor Sherwood this Friday- ask about lab hours
 - More to be added
 ---
 ---
 # Week 2 (10/4- 10/10)
 **Goals:**
 - [x] Read Research Paper Prep by Friday (take notes)
-- [] Read assigned research paper (Dynamic Branch Prediction...)
+- [ ] Read assigned research paper (Dynamic Branch Prediction...)
 - [x] Schedule meetings with Professor Sherwood, research group, and Mai
 - [x] Edit group page- add meeting times and link to log
-- [x] Make digital reading log-
--- [] Clean and format reading log
+- [x] Make digital reading log
+
+-- [ ] Clean and format reading log
 
 **Side Stuff**
 - [] Start learning Python
