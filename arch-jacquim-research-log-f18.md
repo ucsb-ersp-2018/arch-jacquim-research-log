@@ -1,5 +1,27 @@
+# Week 3 (10/11-10/17)
+**Goals:**
+- [] First meeting with Professor Sherwood this Friday- ask about lab hours
+- More to be added
+---
+---
 # Week 2 (10/4- 10/10)
 **Goals:**
+- [x] Read Research Paper Prep by Friday (take notes)
+- [] Read assigned research paper (Dynamic Branch Prediction...)
+- [x] Schedule meetings with Professor Sherwood, research group, and Mai
+- [x] Edit group page- add meeting times and link to log
+- [x] Make digital reading log-
+-- [] Clean and format reading log
+
+**Side Stuff**
+- [] Start learning Python
+- [] Do some reading on the hardware stuff mentioned in papers
+
+**Monday, Oct 8 (2 hrs)**
+
+* Met up with Maggie and started doing a second pass on "A Pythonic Approach...", since we had both read it over the weekend. Discussed main ideas and looked up terms we didn't understand. Shortly after, we learned that we weren't actually supposed to read that paper, and we were assigned a new one. It was still an interesting introduction to the PyRTL tool, and it gave me an idea of some of the hardware stuff going on that I have to learn about.
+
+* Started reading the actual assigned reading, "Dynamic Branch Prediction with Perceptrons"- went over abstract, intro, and experiments and results sections. I have set up a digital reading log on a separate Google Docs, linked [here] (https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit?usp=sharing). It's still pretty messy, so I'm planning to clean that up and add in my notes on "A Pythonic Approach" because why not.
 
 **Sunday, Oct 7 (2.5 hrs)**
 
@@ -30,8 +52,6 @@
 - [x] Record ERSP preliminary thoughts
 
 - [x] Reflect on research logs
-
-- [x] Read Research Paper Prep by Friday (take notes)
 
 - [x] Get started on reading research paper for Team Sherwood for next Wednesday
 
