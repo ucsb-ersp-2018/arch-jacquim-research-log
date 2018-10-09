@@ -23,17 +23,17 @@
 ---
 **Goals:**
 
--[x] Set up research log
+- [x] Set up research log
 
--[x] Attend research group meeting on Friday when scheduled, record attendance
+- [x] Attend research group meeting on Friday when scheduled, record attendance
 
--[x] Record ERSP preliminary thoughts
+- [x] Record ERSP preliminary thoughts
 
--[x] Reflect on research logs
+- [x] Reflect on research logs
 
--[x] Read Research Paper Prep by Friday (take notes)
+- [x] Read Research Paper Prep by Friday (take notes)
 
--[x] Get started on reading research paper for Team Sherwood for next Wednesday
+- [x] Get started on reading research paper for Team Sherwood for next Wednesday
 
 **Wednesday, Oct 3 (2 hrs)**
 
