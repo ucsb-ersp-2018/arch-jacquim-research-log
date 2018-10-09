@@ -15,8 +15,8 @@
    - [ ] Clean and format reading log
 
 **Side Stuff**
-- [] Start learning Python
-- [] Do some reading on the hardware stuff mentioned in papers
+- [ ] Start learning Python
+- [ ] Do some reading on the hardware stuff mentioned in papers
 
 **Monday, Oct 8 (2 hrs)**
 
