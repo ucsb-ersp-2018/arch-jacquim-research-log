@@ -12,7 +12,7 @@
 - [x] Edit group page- add meeting times and link to log
 - [x] Make digital reading log
 
--- [ ] Clean and format reading log
+   - [ ] Clean and format reading log
 
 **Side Stuff**
 - [] Start learning Python
