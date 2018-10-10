@@ -18,6 +18,10 @@
 - [ ] Start learning Python
 - [ ] Do some reading on the hardware stuff mentioned in papers
 
+**Tuesday, Oct 9 (1.5 hrs)**
+
+* Finished reading "Dynamic Branch Prediction...." first pass, finished notes on results and main body of the paper. Overall, as I understand it, the paper talks about applying a simple neural network, the perceptron, to reduce the percentage of mispredictions of branches, which slow down performance. 
+
 **Monday, Oct 8 (2 hrs)**
 
 * Met up with Maggie and started doing a second pass on "A Pythonic Approach...", since we had both read it over the weekend. Discussed main ideas and looked up terms we didn't understand. Shortly after, we learned that we weren't actually supposed to read that paper, and we were assigned a new one. It was still an interesting introduction to the PyRTL tool, and it gave me an idea of some of the hardware stuff going on that I have to learn about.
