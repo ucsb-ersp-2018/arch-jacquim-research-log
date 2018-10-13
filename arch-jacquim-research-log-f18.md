@@ -6,7 +6,7 @@
 - [ ] Make another pass over prev paper ("Dynamic Branch Prediction...")
 - [ ] Read new paper when Deeksha/ Professor Sherwood sends it to us
 
-**Friday, Oct 12 (1 hr) **
+** Friday, Oct 12 (1 hr) **
 
 * Had first meeting with Professor Sherwood and Deeksha at ArchLab today, asked a bunch of questions about the paper we read, the work we'd be doing, and the tools we'll be using. Here is a brief summary of the notes I took during the meeting (there was a lot going on, so these might not be phrased very precisely, but they should be a useful overview):
    * We'll be involved some kind of chip design (programming it, not hardware) that can run neural networks and maximize efficiency by minimizing energy use (we'll develop our own specific research question though)
