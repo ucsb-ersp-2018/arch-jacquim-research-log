@@ -1,7 +1,22 @@
 # Week 3 (10/11-10/17)
 **Goals:**
-- [ ] First meeting with Professor Sherwood this Friday- ask about lab hours
-- More to be added
+- [x] First meeting with Professor Sherwood this Friday- ask about lab hours
+- [ ] Set up Ubuntu on windows to use terminal for Python
+- [ ] At least download PyRTL tool, hopefully start working with it
+- [ ] Make another pass over prev paper ("Dynamic Branch Prediction...")
+- [ ] Read new paper when Deeksha/ Professor Sherwood sends it to us
+
+**Friday, Oct 12 (1 hr) **
+
+* Had first meeting with Professor Sherwood and Deeksha at ArchLab today, asked a bunch of questions about the paper we read, the work we'd be doing, and the tools we'll be using. Here is a brief summary of the notes I took during the meeting (there was a lot going on, so these might not be phrased very precisely, but they should be a useful overview):
+   * We'll be involved some kind of chip design (programming it, not hardware) that can run neural networks and maximize efficiency by minimizing energy use (we'll develop our own specific research question though)
+   * Main focus: Interaction between energy and machine, how adjusting hyperparameters of neural network can change performance
+   * We'll be using PyRTL, so learn how to use it. This means doing the whole bash Ubuntu setup so I can work in the terminal pretty much normally on Windows 10.
+   
+* Terms to look up:
+  * ASIC
+  * TensorFlow
+  * PyTorch
 ---
 ---
 # Week 2 (10/4- 10/10)
