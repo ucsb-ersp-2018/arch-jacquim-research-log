@@ -62,7 +62,6 @@
 ---
 ---
 # Week 1 (9/27-10/3)
----
 **Goals:**
 
 - [x] Set up research log
