@@ -1,5 +1,7 @@
-##Important Links:
+## Important Links:
 [*My Reading Log*](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit)
+---
+---
 
 # Week 3 (10/11-10/17)
 **Goals:**
