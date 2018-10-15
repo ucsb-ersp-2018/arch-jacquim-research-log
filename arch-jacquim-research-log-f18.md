@@ -1,3 +1,6 @@
+##Important Links:
+[*My Reading Log*](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit)
+
 # Week 3 (10/11-10/17)
 **Goals:**
 - [x] First meeting with Professor Sherwood this Friday- ask about lab hours
@@ -5,6 +8,12 @@
 - [ ] At least download PyRTL tool, hopefully start working with it
 - [ ] Make another pass over prev paper ("Dynamic Branch Prediction...")
 - [ ] Read new paper when Deeksha/ Professor Sherwood sends it to us
+
+**Sunday, Oct 14 (2hrs)**
+* Read second pass on "Dynamic Branch Prediction....", filled out questions for part 2 of reading assignment. Can be accessed on reading log (link above)
+* Main takeaway from this paper:
+  Branch prediction can be improved by replacing the predictor’s pattern history table (PHT) with a set of perceptrons (simple neural networks), which can learn as the program runs. Rather than try to improve the predictor by targeting aliasing, the perceptron approach lowers misprediction rates by increasing the accuracy of the prediction algorithm itself.
+ * Can go back and look over some extra terms just for fun later
 
 **Friday, Oct 12 (1 hr)**
 
