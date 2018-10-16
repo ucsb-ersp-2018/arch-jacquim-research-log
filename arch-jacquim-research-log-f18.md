@@ -8,7 +8,7 @@
 - [x] First meeting with Professor Sherwood this Friday- ask about lab hours
 - [ ] Set up Ubuntu on windows to use terminal for Python
 - [ ] At least download PyRTL tool, hopefully start working with it
-- [ ] Make another pass over prev paper ("Dynamic Branch Prediction...")
+- [x] Make another pass over prev paper ("Dynamic Branch Prediction...")
 - [ ] Read new paper when Deeksha/ Professor Sherwood sends it to us
 
 **Sunday, Oct 14 (2hrs)**
