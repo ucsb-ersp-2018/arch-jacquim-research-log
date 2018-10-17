@@ -3,6 +3,13 @@
 ---
 ---
 
+# Week 4 (10/18-10/24)
+**Goals:**
+- [ ] Finish reading "Power..." paper, take notes for pass 1 by Friday
+- [ ] Complete slide for ERSP presentation for Friday's meeting with Prof Sherwood and Deeksha
+- [ ] Go through PyRTL examples by Friday meeting
+- [ ] Teach topic during class time (parallel computing)
+
 # Week 3 (10/11-10/17)
 **Goals:**
 - [x] First meeting with Professor Sherwood this Friday- ask about lab hours
@@ -11,10 +18,15 @@
 - [x] Make another pass over prev paper ("Dynamic Branch Prediction...")
 - [ ] Read new paper when Deeksha/ Professor Sherwood sends it to us
 
+**Tuesday, Oct 16 (2hrs)**
+* Started reading new research paper Deeksha sent to our team- "Power, Architectural Design Constraint..."
+* Chose parallel processing as my teaching topic, and put together a lesson presentation
+    * Main topics: Defining parallel computing/ processing, talking about Amdahl's Law, applications to neural network training and energy efficiency
+
 **Sunday, Oct 14 (2hrs)**
 * Read second pass on "Dynamic Branch Prediction....", filled out questions for part 2 of reading assignment. Can be accessed on reading log (link above)
 * Main takeaway from this paper:
-  Branch prediction can be improved by replacing the predictor’s pattern history table (PHT) with a set of perceptrons (simple neural networks), which can learn as the program runs. Rather than try to improve the predictor by targeting aliasing, the perceptron approach lowers misprediction rates by increasing the accuracy of the prediction algorithm itself.
+> Branch prediction can be improved by replacing the predictor’s pattern history table (PHT) with a set of perceptrons (simple neural networks), which can learn as the program runs. Rather than try to improve the predictor by targeting aliasing, the perceptron approach lowers misprediction rates by increasing the accuracy of the prediction algorithm itself.
  * Can go back and look over some extra terms just for fun later
 
 **Friday, Oct 12 (1 hr)**
