@@ -13,10 +13,10 @@
 # Week 3 (10/11-10/17)
 **Goals:**
 - [x] First meeting with Professor Sherwood this Friday- ask about lab hours
-- [ ] Set up Ubuntu on windows to use terminal for Python
-- [ ] At least download PyRTL tool, hopefully start working with it
+- [x] Set up Ubuntu on windows to use terminal for Python (wazzow!)
+- [x] At least download PyRTL tool, hopefully start working with it
 - [x] Make another pass over prev paper ("Dynamic Branch Prediction...")
-- [ ] Read new paper when Deeksha/ Professor Sherwood sends it to us
+- [x] Start new paper when Deeksha/ Professor Sherwood sends it to us
 
 **Tuesday, Oct 16 (2hrs)**
 * Started reading new research paper Deeksha sent to our team- "Power, Architectural Design Constraint..."
