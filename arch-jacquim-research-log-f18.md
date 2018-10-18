@@ -8,7 +8,7 @@
 - [ ] Finish reading "Power..." paper, take notes for pass 1 by Friday
 - [ ] Complete slide for ERSP presentation for Friday's meeting with Prof Sherwood and Deeksha
 - [ ] Go through PyRTL examples by Friday meeting
-- [ ] Teach topic during class time (parallel computing)
+- [x] Teach topic during class time (parallel computing)
 
 # Week 3 (10/11-10/17)
 **Goals:**
