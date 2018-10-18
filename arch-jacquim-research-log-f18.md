@@ -18,9 +18,16 @@
 - [x] Make another pass over prev paper ("Dynamic Branch Prediction...")
 - [x] Start new paper when Deeksha/ Professor Sherwood sends it to us
 
+**Wednesday, Oct 17 (3.5hrs)**
+* Met with team today for two hours. We spent part of the meeting talking about our teaching topics for class, and the other part setting up the PyRTL tool
+    * Maggie and I had the extra step of downloading an Ubuntu distribution for Windows 10 so we could use the bash terminal, which took a while
+    * Eventually got both Ubuntu and PyRTL up and running, downloaded vim as well to have a familiar text editor. I'm planning to go through some of the PyRTL examples on the lab GitHub, but I spent about half an hour trying to get familiar with using Python in the new environment. I'm not really familiar with Python programming, so I did a Hello World just to figure out some basic syntax and compilation commands. (I'm just using **python "file.py"** to compile and execute, but I'm not entirely certain that's right.)
+    * Continued reading and taking notes on "Power...". It's pretty short, but there's a lot of interesting stuff being mentioned. The topic of parallel computing seems really intriguing, and I'm hoping it's related to the project that Professor Sherwood/ Deeksha have in mind because it seems like there's so much to learn about it/ things you can do with it. Of course, this paper is kind of old (2001, just like the previous paper), so there's probably plenty of new research for me to catch up on.
+ 
+
 **Tuesday, Oct 16 (2hrs)**
 * Started reading new research paper Deeksha sent to our team- "Power, Architectural Design Constraint..."
-* Chose parallel processing as my teaching topic, and put together a lesson presentation
+* Chose parallel processing as my teaching topic, and put together a [lesson presentation](https://docs.google.com/presentation/d/1yCxJnPQI76wYQ2jj_bZSJ5TVwo5UWme4EmkmRED93lE/edit?usp=sharing)
     * Main topics: Defining parallel computing/ processing, talking about Amdahl's Law, applications to neural network training and energy efficiency
 
 **Sunday, Oct 14 (2hrs)**
