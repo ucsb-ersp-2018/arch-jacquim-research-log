@@ -5,17 +5,38 @@
 
 # Week 4 (10/18-10/24)
 **Goals:**
-- [ ] Finish reading "Power..." paper, take notes for pass 1 by Friday
-- [ ] Complete slide for ERSP presentation for Friday's meeting with Prof Sherwood and Deeksha
-- [ ] Go through PyRTL examples by Friday meeting
+- [x] Finish reading "Power..." paper, take notes for pass 1 by Friday
+- [x] Complete slide for ERSP presentation for Friday's meeting with Prof Sherwood and Deeksha
+- [x] Go through PyRTL examples by Friday meeting
 - [x] Teach topic during class time (parallel computing)
+- [ ] Download, look at PyTorch
+- [ ] More PyRTL if time, but definitely attend tutorial Friday 10/26
+- [ ] Read new paper when we get it
+- [ ] Finish compiling notes on "Power..."
+- [ ] Figure out how to link to specific entries in reading log
+- [ ] More reading on neural networks- definitely want to look more at learning rate determination
 
-**Thursday, Oct 18 (2.5hrs)**
+**Friday, Oct 19 (1 hr)**
+* Meeting with Deeksha, Professor Sherwood not present. Minutes below:
+    * Meeting inputs
+      * What exactly are wires/ WireVectors in PyRTL? 
+      * Explanation of 'sim' step in all the PyRTL examples?
+      * Prepared presentation slide on weekly progress for Deeksha
+    * Meeting outcomes
+      * Learned that 'wires' are the actual physical wires in the hardware, and about how the different lengths of the wires affect transfer of data/ execution of programs. Each wire can be thought of as a single bit of information, so a WireVector is a collection of bits associated with a particular piece of information. 
+      * Some discussion on the importance of energy efficiency in embedded appliances as part of Internet of Things (IoT)- when the processor components are not needed, they shouldn't be active. Deeksha explained the concept of dynamic voltage frequency scaling (DVFS), a technique where voltage to a component is reduced or increasing depending on the circumstances, rather than just receiving a constant flow. 
+      * Recommended to look at PyTorch, for neural networks using Python, maybe put together a demo for next meeting? 
+      * There will be a PyRTL tutorial next Friday at 4:00pm
+    * Things I thought of after the fact:
+      * Maybe a little more clarification on hardware blocks and FPGAs, but I can probably find theses things out on my own. 
+      * render_trace() in PyRTL?
+
+**Thursday, Oct 18 (3.5hrs)**
 * Finally worked through some PyRTL examples! I typed out the combologic and counter examples to follow along, and started the statemachine example as well. Definitely some questions, since I've never done hardware design/simulation before, but I felt surprisingly comfortable with the Python syntax. 
 * Finished the "Power..." paper. It's not really a research paper, more kind of an article, but it made a lot of interesting points about parallel processing, voltage reduction, and the increase of leakage with miniaturization of technology. Notes are available on my reading log, but I haven't fully finished transcribing them yet (and will probably use a slightly different format, since the research paper questions are generally not applicable)
    * I definitely want to follow up on some of the topics mentioned in the paper (published in 2001), to see how the predictions made in the paper turned out
 * Main takeaway from this paper:
-> Processors are generally designed to have high performance, meaning faster execution of given instructions, often at a higher energy cost. Techniques like pipelining to improve performance rely on frequency scaling to speed up execution, but energy consupmtion increases linearly with speed. The paper discusses the three factors of energy consumption (supply voltage V^2, short-circuit current, and leakage) and ways to reduce these factors. Parallel processing is proposed as a way to reduce supply voltage without sacrificing performance. Leakage is a factor that is rarely addressed but becomes significant as technology shrinks, to the point where leakage could become the main source of power drain and could damage hardware component of microchips (thermal runaway)
+> Processors are generally designed to have high performance, meaning faster execution of given instructions, often at a higher energy cost. Techniques like pipelining to improve performance rely on frequency scaling to speed up execution, but energy consupmtion increases linearly with speed. The paper discusses the three factors of energy consumption (supply voltage V^2, short-circuit current, and leakage) and ways to reduce these factors. Parallel processing is proposed as a way to reduce supply voltage without sacrificing performance. Leakage is a factor that is rarely addressed but becomes significant as technology shrinks, to the point where leakage could become the main source of power drain and could damage hardware component of microchips (thermal runaway).
 
 # Week 3 (10/11-10/17)
 **Goals:**
