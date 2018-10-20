@@ -53,10 +53,12 @@
     * Continued reading and taking notes on "Power...". It's pretty short, but there's a lot of interesting stuff being mentioned. The topic of parallel computing seems really intriguing, and I'm hoping it's related to the project that Professor Sherwood/ Deeksha have in mind because it seems like there's so much to learn about it/ things you can do with it. Of course, this paper is kind of old (2001, just like the previous paper), so there's probably plenty of new research for me to catch up on.
  
 
-**Tuesday, Oct 16 (2hrs)**
+**Tuesday, Oct 16 (3hrs)**
 * Started reading new research paper Deeksha sent to our team- "Power, Architectural Design Constraint..."
 * Chose parallel processing as my teaching topic, and put together a [lesson presentation](https://docs.google.com/presentation/d/1yCxJnPQI76wYQ2jj_bZSJ5TVwo5UWme4EmkmRED93lE/edit?usp=sharing)
     * Main topics: Defining parallel computing/ processing, talking about Amdahl's Law, applications to neural network training and energy efficiency
+* Meeting with entire ArchLab today at 1:00pm. Mostly just for everyone to introduce ourselves to each other, but we ended up talking about PyRTL a lot since basically everyone in the lab is using it for different projects. Professor Sherwood mentioned new updates had just been added that made it possible to use PyRTL on the Jupyter Notebook Python IDE, but Maggie and I still should figure out how to set up Ubuntu to use the terminal on Windows 10. The master's/ PhD students talked about some pretty specific parts/applications of PyRTL, and so I asked a couple questions in order to try to keep up. I know have a better understanding of clocks/ synchronization of clock domains. 
+* We are also planning a weekly lab-wide meeting in addition to our other meetings, so a poll has been sent out to find the best time for everyone to meet up.
 
 **Sunday, Oct 14 (2hrs)**
 * Read second pass on "Dynamic Branch Prediction....", filled out questions for part 2 of reading assignment. Can be accessed on reading log (link above)
