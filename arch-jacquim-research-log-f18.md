@@ -16,6 +16,19 @@
 - [ ] Figure out how to link to specific entries in reading log
 - [ ] More reading on neural networks- definitely want to look more at learning rate determination
 
+**Tuesday, Oct 23 (3 hrs)**
+* Downloaded PyTorch, looked at online tutorial and made some tensor matrices
+   * Tomorrow, during team meeting, we will be working on PyTorch together and hopefully be able to put together a demo by Friday
+* Finished "In-Datacenter Performance..." paper, notes on reading log 
+   * Main takeaway:
+   > The TPU co-processor (written using TensorFlow) was able to improve inference and response time of spoken commands significantly over traditional CPU and GPU servers. Its simple design used less energy than either traditional implementation (though its consumption did not scale well when operating at less than maximum load), reduced dependence on the CPU, and overall demonstrated that neural networks offered big improvements in inference applications. 
+
+**Monday, Oct 22 (1.5 hrs)**
+* Started reading, taking notes on new paper "In-Datacenter Performance Analysis of a Tensor Processing Unit"
+* Compiled rest of notes on "Power" paper
+*Start literature search- 10 potential papers by class on WED*
+*Narrow down list of research questions during team meeting on WED*
+
 **Sunday, Oct 21 (1.5hrs)**
 
 Research Problem, Personal Brainstorm:
