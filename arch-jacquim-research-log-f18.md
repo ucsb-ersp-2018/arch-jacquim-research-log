@@ -16,6 +16,21 @@
 - [ ] Figure out how to link to specific entries in reading log
 - [ ] More reading on neural networks- definitely want to look more at learning rate determination
 
+**Sunday, Oct 21 (1.5hrs)**
+
+Research Problem, Personal Brainstorm:
+* Frequency scaling can speed up processors, but with a corresponding linear increase in required energy 
+* Neural networks can improve branch prediction, and therefore speed up execution time
+* Energy efficiency is a growing problem as more technology is built, esp with small items where the hardware components are at risk of being damaged by energy leakage
+* Reducing supply voltage to processors cuts consumption the most, but also reduces their performance
+* We need to find a way to reduce processor power consumption without affecting performance
+* How do we design neural networks that run on minimal power? 
+
+*What do you like most about the work you have been doing?  What do you like least?  What is the biggest concern or question you have?*
+
+So far we’ve mostly just been doing reading and getting familiar with the Python-based tools we’ll be using for our actual work, but I think things are going pretty well. I’ve found all three weekly meetings (with the lab, team, and Professor Sherwood/ Deeksha) very helpful and interesting. With my teammates, it’s nice to discuss the papers, figure out PyRTL, and learn things from each other. We’re exposed to a lot of new information at once in the larger meetings, which is a little intimidating, but the other members of ArchLab are usually willing to answer all of our questions and explain topics we’re not familiar with. There’s nothing I really dislike so far, I’m mostly just worried about spending enough time on the project. I also have to learn Python while I use PyRTL and PyTorch, but I think I’ll be able to keep up.
+
+
 **Friday, Oct 19 (1 hr)**
 * Meeting with Deeksha, Professor Sherwood not present. Minutes below:
     * Meeting inputs
