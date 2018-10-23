@@ -26,7 +26,9 @@
 **Monday, Oct 22 (1.5 hrs)**
 * Started reading, taking notes on new paper "In-Datacenter Performance Analysis of a Tensor Processing Unit"
 * Compiled rest of notes on "Power" paper
+
 *Start literature search- 10 potential papers by class on WED*
+
 *Narrow down list of research questions during team meeting on WED*
 
 **Sunday, Oct 21 (1.5hrs)**
