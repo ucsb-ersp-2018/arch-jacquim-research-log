@@ -9,27 +9,32 @@
 - [x] Complete slide for ERSP presentation for Friday's meeting with Prof Sherwood and Deeksha
 - [x] Go through PyRTL examples by Friday meeting
 - [x] Teach topic during class time (parallel computing)
-- [ ] Download, look at PyTorch
+- [x] Download, look at PyTorch
 - [ ] More PyRTL if time, but definitely attend tutorial Friday 10/26
-- [ ] Read new paper when we get it
-- [ ] Finish compiling notes on "Power..."
+- [x] Read new paper when we get it
+- [x] Finish compiling notes on "Power..."
 - [ ] Figure out how to link to specific entries in reading log
 - [ ] More reading on neural networks- definitely want to look more at learning rate determination
+
+**Wednesday, Oct 24 (2.5 hrs)**
+* Team meeting! Dylan couldn't attend, so it was just me, Maggie, and Dawit. We focused on learning more about PyTorch by following along with a tutorial on the website. Learned what a tensor is, how to implement one in PyTorch, and some of the functions that come with them. Dawit recommended [this](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m) video series on YouTube to learn more about PyTorch, so started watching the first few videos. By our meeting on Friday, I want to have at least built the predictor example from this video series (in which the program uses tensors to predict the outcome of a test based on the number of hours spent studying), which will help me learn more about the training process.
+* Figured out how to link to specific places in my reading log, so went back and added links for each entry. Everything is still within the same document, however.
 
 **Tuesday, Oct 23 (3 hrs)**
 * Downloaded PyTorch, looked at online tutorial and made some tensor matrices
    * Tomorrow, during team meeting, we will be working on PyTorch together and hopefully be able to put together a demo by Friday
-* Finished "In-Datacenter Performance..." paper, notes on reading log 
+* Finished "In-Datacenter Performance..." paper, notes found [here](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit#bookmark=id.9g3pjsqusfbf) 
    * Main takeaway:
    > The TPU co-processor (written using TensorFlow) was able to improve inference and response time of spoken commands significantly over traditional CPU and GPU servers. Its simple design used less energy than either traditional implementation (though its consumption did not scale well when operating at less than maximum load), reduced dependence on the CPU, and overall demonstrated that neural networks offered big improvements in inference applications. 
+* Worked on literature search- Compiled 7-8 interesting/related research papers from IEEE and ACM databases. Links to the papers, as well as some basic information about each (author, year, abstract summary) are listed on a doc shared with my group [here](https://docs.google.com/document/d/1ASOt_Sq22KKWExKKTC8lCLQ7iYaSatrMa1QnUe9ziOI/edit). My contributions are indicated in purple.
 
 **Monday, Oct 22 (1.5 hrs)**
 * Started reading, taking notes on new paper "In-Datacenter Performance Analysis of a Tensor Processing Unit"
-* Compiled rest of notes on "Power" paper
+* Compiled rest of notes on "Power" paper, notes [here](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit#bookmark=id.2msvdre2aznp)
 
-*Start literature search- 10 potential papers by class on WED*
+~~*Start literature search- 10 potential papers by class on WED*~~
 
-*Narrow down list of research questions during team meeting on WED*
+~~*Narrow down list of research questions during team meeting on WED*~~
 
 **Sunday, Oct 21 (1.5hrs)**
 
@@ -112,12 +117,12 @@ So far we’ve mostly just been doing reading and getting familiar with the Pyth
 # Week 2 (10/4- 10/10)
 **Goals:**
 - [x] Read Research Paper Prep by Friday (take notes)
-- [ ] Read assigned research paper (Dynamic Branch Prediction...)
+- [x] Read assigned research paper (Dynamic Branch Prediction...)
 - [x] Schedule meetings with Professor Sherwood, research group, and Mai
 - [x] Edit group page- add meeting times and link to log
 - [x] Make digital reading log
 
-   - [ ] Clean and format reading log
+   - [x] Clean and format reading log
 
 **Side Stuff**
 - [ ] Start learning Python
@@ -126,12 +131,13 @@ So far we’ve mostly just been doing reading and getting familiar with the Pyth
 **Tuesday, Oct 9 (1.5 hrs)**
 
 * Finished reading "Dynamic Branch Prediction...." first pass, finished notes on results and main body of the paper. Overall, as I understand it, the paper talks about applying a simple neural network, the perceptron, to reduce the percentage of mispredictions of branches, which slow down performance. 
-
+* ["Perceptron" notes](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit#bookmark=id.4tfbk42ka5g)
+* ["Pythonic Approach" notes](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit#bookmark=id.sm3jmho09qam)
 **Monday, Oct 8 (2 hrs)**
 
 * Met up with Maggie and started doing a second pass on "A Pythonic Approach...", since we had both read it over the weekend. Discussed main ideas and looked up terms we didn't understand. Shortly after, we learned that we weren't actually supposed to read that paper, and we were assigned a new one. It was still an interesting introduction to the PyRTL tool, and it gave me an idea of some of the hardware stuff going on that I have to learn about.
 
-* Started reading the actual assigned reading, "Dynamic Branch Prediction with Perceptrons"- went over abstract, intro, and experiments and results sections. I have set up a digital reading log on a separate Google Docs, linked [here] (https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit?usp=sharing). It's still pretty messy, so I'm planning to clean that up and add in my notes on "A Pythonic Approach" because why not.
+* Started reading the actual assigned reading, "Dynamic Branch Prediction with Perceptrons"- went over abstract, intro, and experiments and results sections. I have set up a digital reading log on a separate Google Docs, linked [here] (https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit?usp=sharing). It's still pretty messy, so I'm planning to clean that up and add in my notes on "A Pythonic Approach" because why not. 
 
 **Sunday, Oct 7 (2.5 hrs)**
 
