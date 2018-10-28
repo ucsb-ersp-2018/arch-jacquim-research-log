@@ -47,7 +47,7 @@ Three meetings today!
     * Simulation "builds" the hardware described by the "recipe" in the PyRTL file
   * Mentioned that it is getting harder to build faster processors as we have before (speed doubling at a much slower rate than before), and emphasized that there are other ways to build good/efficient processors
     * Redefine what is considered an improvement: People have been focusing on processor speed for so long because it is what is most immediately enticing/ obvious, but other aspects have been neglected-- ex, energy efficiency! 
-    * Now what used to be "fringe work" with computer architecture (improving aspects other than speed, like energy consumption, etc) is becoming more normal, since researcher are reaching physical limitations to speeding up/ shrinking processors (quantum stuff)
+    * Now what used to be "fringe work" with computer architecture (improving aspects other than speed, like energy consumption, etc) is becoming more normal, since researchers are reaching physical limitations to speeding up/ shrinking processors (quantum stuff)
     
  **Overall:** Got a better idea of direction of project and literature search. Need to focus on PyRTL, make a NN by next Friday. Deeksha will be sending us some more information on that topic soon.
 
