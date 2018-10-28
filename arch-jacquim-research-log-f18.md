@@ -4,11 +4,11 @@
 ---
 # Week 5 (10/25-10/31)
 **Goals:**
-- [ ]- Refine literature search down to 10 papers by MON- can Slack Deeksha if need advice on a particular paper
-- [ ]- Make a simple NN with team, MNIST dataset by **FRI 11/2** (more PyRTL!)
-- [ ]- Read new material (either NN blog post sent by Deeksha, or book recommended by Mai)
-- [ ]- Get started on writing proposal with team- Research context/problem statement by **WED 10/31** (Start compiling related work?)
-- [ ]- If time, continue video series on PyTorch recommended by Dawit
+- [ ] - Refine literature search down to 10 papers by MON- can Slack Deeksha if need advice on a particular paper
+- [ ] - Make a simple NN with team, MNIST dataset by **FRI 11/2** (more PyRTL!)
+- [ ] - Read new material (either NN blog post sent by Deeksha, or book recommended by Mai)
+- [ ] - Get started on writing proposal with team- Research context/problem statement by **WED 10/31** (Start compiling related work?)
+- [ ] - If time, continue video series on PyTorch recommended by Dawit
 
 
 **Friday, Oct 26 (2.5 hrs)**
