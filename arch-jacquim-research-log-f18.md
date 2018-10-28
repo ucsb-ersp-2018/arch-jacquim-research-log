@@ -31,7 +31,7 @@ Three meetings today!
     * How will two main topics (NNs, energy efficiency) come together specifically for our project? 
   * Meeting outputs:
     * Should look at papers centered on computer architecture with NNs (architecture implementing NNs), power (specifically energy efficient implementations of NNs)
-      * What makes these things energy efficiency? What is/isn't efficient, what cannot be improved
+      * What makes these things energy efficient? What is/isn't efficient, what cannot be improved
     * Look for papers from ICSA, ASPLOS, MICRO (conference and IEEE magazine), HPCA
       * Read abstract and intro in detail for literature search, briefly skim results section
       * Also might want to consider number of citations (more citations = more popular work), and specifically *hardware* implementations, not algorithms
@@ -49,7 +49,7 @@ Three meetings today!
     * Redefine what is considered an improvement: People have been focusing on processor speed for so long because it is what is most immediately enticing/ obvious, but other aspects have been neglected-- ex, energy efficiency! 
     * Now what used to be "fringe work" with computer architecture (improving aspects other than speed, like energy consumption, etc) is becoming more normal, since researcher are reaching physical limitations to speeding up/ shrinking processors (quantum stuff)
     
- Overall: Got a better idea of direction of project and literature search. Need to focus on PyRTL, make a NN by next Friday. Deeksha will be sending us some more information on that topic soon.
+ **Overall:** Got a better idea of direction of project and literature search. Need to focus on PyRTL, make a NN by next Friday. Deeksha will be sending us some more information on that topic soon.
 
 
 # Week 4 (10/18-10/24)
