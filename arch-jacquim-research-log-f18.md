@@ -2,6 +2,55 @@
 [*My Reading Log*](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit)
 ---
 ---
+# Week 5 (10/25-10/31)
+**Goals:**
+- [ ]- Refine literature search down to 10 papers by MON- can Slack Deeksha if need advice on a particular paper
+- [ ]- Make a simple NN with team, MNIST dataset by **FRI 11/2** (more PyRTL!)
+- [ ]- Read new material (either NN blog post sent by Deeksha, or book recommended by Mai)
+- [ ]- Get started on writing proposal with team- Research context/problem statement by **WED 10/31** (Start compiling related work?)
+- [ ]- If time, continue video series on PyTorch recommended by Dawit
+
+
+**Friday, Oct 26 (2.5 hrs)**
+Three meetings today! 
+
+* Meeting with Mai:
+  * Mai asked us a bunch of questions about what we know about the project and what specific knowledge we have about the topics so far. We talked about our reading on neural networks (perceptrons, gradient descent, learning rates, weights/matrix math, etc) and hardware/energy (parallelization, frequency scaling). 
+  * She taught us about the Train/Dev/Test process of training neural networks and explained some specific terms about NNs:
+    * Hyperparameter tuning: adjusting different variables withing the NN to make it more accurate
+    * Overfit: When the NN is too closely tuned to the test data, and cannot generalize well to all data input after training
+    * Train/Dev/Test data should be in a ratio of 60%/20%/20%
+    * Also recommended we get and read the book "Make Your Own Neural Network: An In-Depth Visual Guide for Beginners"
+  * Recommended project for the next few days: build a NN, get PyTorch running with MNIST dataset (handwritten numbers)
+
+* Meeting with Deeksha, Professor Sherwood: 
+  * Meeting inputs:
+    * What should we focus our attention on/ What is our project going to involve? (Need to start narrowing scope)
+    * Should we be focusin more on PyRTL or PyTorch?
+    * Mai and Professor Sherwood mentioned hyperparameter tuning- what exactly are we doing with this?
+    * How will two main topics (NNs, energy efficiency) come together specifically for our project? 
+  * Meeting outputs:
+    * Should look at papers centered on computer architecture with NNs (architecture implementing NNs), power (specifically energy efficient implementations of NNs)
+      * What makes these things energy efficiency? What is/isn't efficient, what cannot be improved
+    * Look for papers from ICSA, ASPLOS, MICRO (conference and IEEE magazine), HPCA
+      * Read abstract and intro in detail for literature search, briefly skim results section
+      * Also might want to consider number of citations (more citations = more popular work), and specifically *hardware* implementations, not algorithms
+    * From now on, make *weekly* slides about research activities for discussion during meetings 
+      * Try to include at least one graphic
+    * Focus on PyRTL, set up a NN soon
+      * PyTorch more "optional" for now- still have to work on it
+    * Asked Professor Sherwood about some of the PyRTL examples I had gone through, and he talked about the details of building one-bit and ripple-carry adders in hardware using PyRTL, waveforms for visualizing inputs and outputs of the adders
+
+* ArchLab PyRTL Tutorial:
+  * A lot of similar material to what Professor Sherwood talked about during our 11:00 meeting
+  * More explanation of the simulation step of writing hardware in PyRTL
+    * Simulation "builds" the hardware described by the "recipe" in the PyRTL file
+  * Mentioned that it is getting harder to build faster processors as we have before (speed doubling at a much slower rate than before), and emphasized that there are other ways to build good/efficient processors
+    * Redefine what is considered an improvement: People have been focusing on processor speed for so long because it is what is most immediately enticing/ obvious, but other aspects have been neglected-- ex, energy efficiency! 
+    * Now what used to be "fringe work" with computer architecture (improving aspects other than speed, like energy consumption, etc) is becoming more normal, since researcher are reaching physical limitations to speeding up/ shrinking processors (quantum stuff)
+    
+ Overall: Got a better idea of direction of project and literature search. Need to focus on PyRTL, make a NN by next Friday. Deeksha will be sending us some more information on that topic soon.
+
 
 # Week 4 (10/18-10/24)
 **Goals:**
@@ -10,10 +59,10 @@
 - [x] Go through PyRTL examples by Friday meeting
 - [x] Teach topic during class time (parallel computing)
 - [x] Download, look at PyTorch
-- [ ] More PyRTL if time, but definitely attend tutorial Friday 10/26
+- [x] More PyRTL if time, but definitely attend tutorial Friday 10/26
 - [x] Read new paper when we get it
 - [x] Finish compiling notes on "Power..."
-- [ ] Figure out how to link to specific entries in reading log
+- [x] Figure out how to link to specific entries in reading log
 - [ ] More reading on neural networks- definitely want to look more at learning rate determination
 
 **Wednesday, Oct 24 (2.5 hrs)**
