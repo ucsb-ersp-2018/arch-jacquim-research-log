@@ -18,6 +18,7 @@
   * Built and simulated the MAC and ReLU circuits in PyRTL! Dylan had read the documentation during the week, and is already familiar with circuit design, so he led us through the process of sketching out the circuits on paper, then writing and testing the circuits using PyRTL. We figured out what libraries and functions to include, and how to simulate the circuits with random inputs. Something we need to figure out is how to represent negative and floating-point numbers in PyRTL, since we'll be needing both of those for the weights in NNs (which take on floating-point values between -1 and 1). 
 
 *Look at NN implementations with PyTorch, using MNIST dataset*
+
 *Read more of the three selected papers from the literature search*
 
 **Monday, Oct 29 (2 hrs)**
