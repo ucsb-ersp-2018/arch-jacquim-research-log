@@ -4,12 +4,27 @@
 ---
 # Week 5 (10/25-10/31)
 **Goals:**
-- [ ]  Refine literature search down to 10 papers by MON- can Slack Deeksha if need advice on a particular paper
+- [x]  Refine literature search down to 10 papers by MON- can Slack Deeksha if need advice on a particular paper
 - [ ]  Make a simple NN with team, MNIST dataset by **FRI 11/2** (more PyRTL!)
+- [ ]  Make a MAC (multiply-accumulate) and ReLU (max(0,x) activation function) in hardware with PyRTL, assigned by Deeksha
 - [ ]  Read new material (either NN blog post sent by Deeksha, or book recommended by Mai)
-- [ ]  Get started on writing proposal with team- Research context/problem statement by **WED 10/31** (Start compiling related work?)
+- [x]  Get started on writing proposal with team- Research context/problem statement by **WED 10/31** (Start compiling related work?)
+- [ ]  Read survey paper "Artificial NNs in Hardware..."
 - [ ]  If time, continue video series on PyTorch recommended by Dawit
 
+**Wednesday, Oct 31 (2 hrs)**
+* Team meeting today, which was very productive.
+  * Started by finishing up the parts of the proposal that were due by class time- The intro, related works, and problem statement. Deeksha did respond to our messages on Slack, saying that the sentence we sent her as our problem statement captures what we want to achieve with the project, it doesn't provide a context for the work. She said she could write a few sentences to set up the problem statement, but I wasn't sure she should just be directly telling us, so I went ahead and shared our draft of the proposal introduction to show her what kind of context we intended for the problem statement. We only got her message after our meeting ended however, so we couldn't get incorporate any of her advice while we were working. Hopefully she'll be able to help us refine the proposal.
+  * Built and simulated the MAC and ReLU circuits in PyRTL! Dylan had read the documentation during the week, and is already familiar with circuit design, so he led us through the process of sketching out the circuits on paper, then writing and testing the circuits using PyRTL. We figured out what libraries and functions to include, and how to simulate the circuits with random inputs. Something we need to figure out is how to represent negative and floating-point numbers in PyRTL, since we'll be needing both of those for the weights in NNs (which take on floating-point values between -1 and 1). 
+
+*Look at NN implementations with PyTorch, using MNIST dataset*
+*Read more of the three selected papers from the literature search*
+
+**Monday, Oct 29 (2 hrs)**
+* Started work on proposal: introduction, related works, problem statement need to be sketched out by next class (Wed). Our proposed problem statement so far is "How does altering specific hyperparameters of hardware feed forward neural networks affect energy consumption, accuracy, and area?" I messaged Deeksha on Slack to ask her whether this seemed to be hitting all the points, but she just asked more about the proposal itself and has not yet given feedback on our problem statement. I also started reading the abstracts and intros of the three papers we selected, since I wasn't familiar with some of them (chosen by my teammates). The survey paper, "Artificial NNs in Hardware...", looks like it has some pretty interesting/promising information, so I definitely want to read that more closely first to get a broader view of the field of our project.
+
+**Sunday, Oct 28 (2 hrs)**
+* Worked on looking through papers listed on literature review, read through abstracts and intros to narrow down our list. Ultimately, we selected three that we thought were most relevant: ["Artificial neural networks in hardware: A survey of two decades of progress"](https://www.sciencedirect.com/science/article/pii/S092523121000216X), ["Low-power, high-performance analog neural branch prediction"](https://dl.acm.org/citation.cfm?id=1521824), and ["An Energy-Efficient Architecture for Binary Weight Convolutional Neural Networks"](https://ieeexplore.ieee.org/document/8103902). Hopefully this will be enough to get started on the proposal.
 
 **Friday, Oct 26 (2.5 hrs)**
 Three meetings today! 
