@@ -25,7 +25,9 @@ Graph of Input vs Output of a ReLU Activation Function:
 
    ![alt text](https://i.stack.imgur.com/by4EB.png "ReLU graph")
    
-Returns 0 if initial input x <=0, otherwise it just returns the inital input x
+Returns 0 if initial input x <=0, otherwise it just returns the inital input x.
+
+Things to do soon:
   
 *Look at NN implementations with PyTorch, using MNIST dataset*
 
