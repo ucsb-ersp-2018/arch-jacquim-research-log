@@ -18,12 +18,13 @@
   * Built and simulated the MAC and ReLU circuits in PyRTL! Dylan had read the documentation during the week, and is already familiar with circuit design, so he led us through the process of sketching out the circuits on paper, then writing and testing the circuits using PyRTL. We figured out what libraries and functions to include, and how to simulate the circuits with random inputs. Something we need to figure out is how to represent negative and floating-point numbers in PyRTL, since we'll be needing both of those for the weights in NNs (which take on floating-point values between -1 and 1). 
 
 Circuit Diagram of a MAC Unit:
----
+
   ![alt text](https://www.researchgate.net/profile/Mathan_Natarajamoorthy/publication/283521704/figure/fig5/AS:412039555108871@1475249294009/Figure-5-Architecture-of-proposed-MAC-unit.png "MAC unit diagram")
 
 Graph of Input vs Output of a ReLU Activation Function:
----
+
    ![alt text](https://i.stack.imgur.com/by4EB.png "ReLU graph")
+   
 Returns 0 if initial input x <=0, otherwise it just returns the inital input x
   
 *Look at NN implementations with PyTorch, using MNIST dataset*
