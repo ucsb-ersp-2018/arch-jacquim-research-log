@@ -16,6 +16,8 @@
 * Team meeting today, which was very productive.
   * Started by finishing up the parts of the proposal that were due by class time- The intro, related works, and problem statement. Deeksha did respond to our messages on Slack, saying that the sentence we sent her as our problem statement captures what we want to achieve with the project, it doesn't provide a context for the work. She said she could write a few sentences to set up the problem statement, but I wasn't sure she should just be directly telling us, so I went ahead and shared our draft of the proposal introduction to show her what kind of context we intended for the problem statement. We only got her message after our meeting ended however, so we couldn't get incorporate any of her advice while we were working. Hopefully she'll be able to help us refine the proposal.
   * Built and simulated the MAC and ReLU circuits in PyRTL! Dylan had read the documentation during the week, and is already familiar with circuit design, so he led us through the process of sketching out the circuits on paper, then writing and testing the circuits using PyRTL. We figured out what libraries and functions to include, and how to simulate the circuits with random inputs. Something we need to figure out is how to represent negative and floating-point numbers in PyRTL, since we'll be needing both of those for the weights in NNs (which take on floating-point values between -1 and 1). 
+  
+  ![alt text]( https://image.slidesharecdn.com/mul-120428230858-phpapp01/95/mac-unit-using-different-multipliers-3-728.jpg?cb=1335654669 "MAC unit diagram")
 
 *Look at NN implementations with PyTorch, using MNIST dataset*
 
