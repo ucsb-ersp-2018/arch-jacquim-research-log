@@ -27,6 +27,7 @@
   * Meeting outputs:
     * We will be incorporating PyTorch and PyRTL as part our research question
       * Write the NNs in PyTorch, figure out how to put into PyRTL
+    * Negative numbers in PyRTL must be expressed with two's complement, but there are no floating point numbers, so we'll have to scale weights to integer values
     * Suggested Clusters for papers
       > 1) Applications of NNs- deep learning? (Implementations)
       > 2) NNs in hardware (Optimizations) 
