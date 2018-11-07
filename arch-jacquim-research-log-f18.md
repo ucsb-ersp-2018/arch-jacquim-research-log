@@ -2,12 +2,67 @@
 [*My Reading Log*](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit)
 ---
 ---
+# Week 6 (11/1-11/7)
+- [ ] Proposal Pt 2 draft by WED 11/7: Proposed Solution
+- [ ] Meetings and goals with Mai, Deeksha, and ArchLab
+- [ ] Read essays and blog post sent by Deeksha
+- [ ] Learn more about different architectures
+- [ ] Follow along with NN tutorial in Python- learn some more Python syntax
+- [ ] Build a matrix multiplier in PyRTL, build a FIFO if have time
+- [ ] Read more PyRTL documentation!
+
+**Friday, Nov 2 (4 hrs)**
+* Meeting with Mai at 8am: 
+  * Mai asked a lot of specific questions about the physical implementation of our experiment, and we compiled a list of the ones we wanted to go over with Deeksha:
+  > How are we going to use PyTorch with PyRTL? What role will each toolset play in our tests? What specific tradeoffs are we looking at?
+  She also emphasized that we need to organize our literary search more carefully into clusters based on topic, and identify the most important papers for our project by next Friday. We also need to start looking into tutorials on full feedforward NNs, know how NNs scale into different layers and how they work with specific architectures, and know how the circuits we have built (MAC, ReLU) are relevant to the project.
+  
+* Meeting with Deeksha at 11am:
+  * Meeting inputs:
+    * Present slides for meeting about work done during week, plans for next week
+    * Questions from meeting with Mai
+    * What is PyRTL ultimately giving us as a final measure? What kind of data/output from tests should we be looking at?
+    * How can we implement negatives and floating point numbers in PyRTL? (for use as weights, floats -1 through 1)
+    * Review comments on proposal, see where we need to add more detail
+  * Meeting outputs:
+    * We will be incorporating PyTorch and PyRTL as part our research question
+      * Write the NNs in PyTorch, figure out how to put into PyRTL
+    * Suggested Clusters for papers
+      > 1) Applications of NNs- deep learning? (Implementations)
+      > 2) NNs in hardware (Optimizations) 
+      > 3) Low power, high efficiency in hardware
+      > 4) Different architectures- TPU and 2 Microsoft Research papers (SIMD)
+    * Discussed some different architectures:
+      * RISC vs CISC architectures- tradeoff between complexity & amount of instructions
+      * Google TPU- time dependent systolic array architecture
+      * SIMD- single instruction multiple data- 1 instruction happens over and over on diff data (pipeline) 
+         * More complex architecture does simple things faster
+         * Microsoft paper uses SIMD
+    * TPU etc are implementations of NNs in hardware, not the NN themselves- NN accelerators
+      * Chips that behave like NNs- designed for NNs to run on them, to accelerate their performance 
+    * How to compute neural networks in computer architecture? Examine effects of specific hyperparameters on performance
+      * **Neural Network hyperparameters- num layers, activation function, learning rate, dropout, batch size**
+    * Discussed more details of steps of PyRTL process- design (code the instructions to build the hardware), simulate (run it as though it were a real piece of hardware), synthesis (putting on chip- uses netlists/bit streams- synthesize hardware by putting it on a physical FPGA)
+    * With regards to testing effects of hyperparamters, measuring energy consumption, area, etc, PyRTL comes with toolchains that estimate area based on feature size (transistor size, getting smaller) and determine other effects
+      * Power/ Latency/ Timing estimates can be done w these toolchains as well
+    * Learned a little about technodes (transistor size), how area is based on technode chosen, and how the transistor is the component whose size is being limited by quantum effects (as mentioned by Professor Sherwood before)
+    * Our team discussed the proposed solution section of our paper, then showed it to Deeksha to see if we need to add more detail. So far, we have: building neural network change hyperparameter measure difference in tradoffs
+    
+* Group work in ArchLab at 4pm:
+ * Met up in ArchLab again to go over the blog post Deesksha sent us about building an NN in Python (not using PyRTL). I didn't want to follow along without understanding anything by just copy and pasting the code, so I spent a lot of time reading about specific syntax for Python and the specific libraries being used, as well as the math being discussed (learning rate, gradients, backpropagation, etc). I think I get the main idea pretty well, but the unfamiliar syntax is what is slowing me down the most
+
+**Thursday, Nov 1 (1/5 hrs)**
+* Looked over Deeksha's feedback on proposal: Definitely some terms that need to be cleared up or explained more thoroughly, and we'll definitely be making some refinements as we read the related works in more details. 
+* Put together slide for meeting with Deeksha about weekly accomplishments, plans for the week
+  * Mainly want to read more PyRTL documentation, so I can implement more complicated circuits with less help
+  * More on implementation of NNs
+  
 # Week 5 (10/25-10/31)
 **Goals:**
 - [x]  Refine literature search down to 10 papers by MON- can Slack Deeksha if need advice on a particular paper
-- [ ]  Make a simple NN with team, MNIST dataset by **FRI 11/2** (more PyRTL!)
-- [ ]  Make a MAC (multiply-accumulate) and ReLU (max(0,x) activation function) in hardware with PyRTL, assigned by Deeksha
-- [ ]  Read new material (either NN blog post sent by Deeksha, or book recommended by Mai)
+- [ ]  Make a simple NN with team, MNIST dataset by **FRI 11/2** (more PyRTL!) [Got new reading material this week on this topic]
+- [x]  Make a MAC (multiply-accumulate) and ReLU (max(0,x) activation function) in hardware with PyRTL, assigned by Deeksha
+- [x]  Read new material (either NN blog post sent by Deeksha, or book recommended by Mai)
 - [x]  Get started on writing proposal with team- Research context/problem statement by **WED 10/31** (Start compiling related work?)
 - [ ]  Read survey paper "Artificial NNs in Hardware..."
 - [ ]  If time, continue video series on PyTorch recommended by Dawit
