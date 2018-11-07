@@ -46,7 +46,7 @@
     * With regards to testing effects of hyperparamters, measuring energy consumption, area, etc, PyRTL comes with toolchains that estimate area based on feature size (transistor size, getting smaller) and determine other effects
       * Power/ Latency/ Timing estimates can be done w these toolchains as well
     * Learned a little about technodes (transistor size), how area is based on technode chosen, and how the transistor is the component whose size is being limited by quantum effects (as mentioned by Professor Sherwood before)
-    * Our team discussed the proposed solution section of our paper, then showed it to Deeksha to see if we need to add more detail. So far, we have: building neural network change hyperparameter measure difference in tradoffs
+    * Our team discussed the proposed solution section of our paper, then showed it to Deeksha to see if we need to add more detail. So far, we have: Build a feedforward NN in PyRTL, adjust hyperparameters individually and test performance with toolchains to determine how specific hyperparameters affect various aspects of performance.
     
 * Group work in ArchLab at 4pm:
  * Met up in ArchLab again to go over the blog post Deesksha sent us about building an NN in Python (not using PyRTL). I didn't want to follow along without understanding anything by just copy and pasting the code, so I spent a lot of time reading about specific syntax for Python and the specific libraries being used, as well as the math being discussed (learning rate, gradients, backpropagation, etc). I think I get the main idea pretty well, but the unfamiliar syntax is what is slowing me down the most
