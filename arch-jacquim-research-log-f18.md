@@ -2,14 +2,59 @@
 [*My Reading Log*](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit)
 ---
 ---
+# Week 7 (11/8-11/14)
+- [ ] Further reading on different architectures
+- [ ] More detailed reading of essays/posts sent by Deeksha
+- [ ] Finish matrix multiplier
+- [ ] Learn about FIFO, implement in PyRTL (optional)
+- [ ] Part 3 of paper due by class Wednesday (with edits on first parts): Evaluation and Implementation Plan
+- [ ] Create a timeline for work over next two quarters (Rough idea by class on Wednesday, try to add as much detail as we know about)
+
+**Tuesday, Nov 13 (3.5 hrs)**
+* Worked with Maggie to add two more paragraphs to our intro/related works section, according to Mai's suggestion. We read through our compiled summaries of the literature papers to identify the ones that seemed the most closely related to our research question and wrote a paragraph for each about the neural network hyperparameters discussed and the some specific arhcitectures designed to optimize their behavior. The papers we chose are: ["DNPU: An Energy-Efficient Deep-Learning Processor with Heterogeneous Multi-Core Architecture"](https://ieeexplore.ieee.org/document/8474942) and ["An Energy-Efficient Architecture for Binary Weight Convolutional Neural Networks"](https://ieeexplore.ieee.org/document/8103902)
+
+**Monday, Nov 12 (2 hrs)**
+* Team meeting instead of class, we worked on making edits to the intro and related works of our paper. Added a lot of citations and cleaned up the language to be more formal and explicit about the connections between the related works and our own research question. Resolved all of Mai's advised changes (hopefully) except being more clear about the PyTorch/PyRTL connection in our proposed solution section. 
+
+**Friday, Nov 9 (4 hrs)**
+* Meeting with Mai:
+  * Mai had read over our first draft and gave us a lot of good advice on revisions. Photos of her notes on the paper are available on our shared Google Drive folder, accessible from our group GitHub page and [here] (https://drive.google.com/drive/folders/1TNXCO44omkWR_bspbvrR-L-IRbbHNyIT?ths=true)
+
+* Meeting with Deeksha and Professor Sherwood:
+  * Deeksha explained PyTorch step in more detail: 
+    * Implement and test the neural network in PyTorch first to make sure it works, adjust hyperparameters to see effects in normal implementation
+    * Then translate by hand into PyRTL to see behavior in hardware
+    * Ideally, would be able to translate PyTorch to PyRTL automatically by end of the project, but that's just an extra goal
+  * She told us to make our own ERSP folder on the ArchLab GitHub to push our hardware designs to as we work on them
+  * After that, we just reviewed some of Mai's comments on our paper to determine what specific parts/papers to target
+
+* Attended a talk with ArchLab: "Towards Hardware Security", with Professor Houman Homayoun
+ * Not really related to our project, but the talk was pretty interesting and I might want to read more about security when I have time 
+
+**Thursday, Nov 8 (2 hrs)**
+* Team reorganized our literary search- reviewed intros and conclusions, put them into three main categories based on topic, then identified the neural network hyperparameters and tradeoffs discussed in each paper.
+* Categories we divided the papers into:
+  * NNs in hardware
+  * Low power, high efficiency
+  * Different architectures
+* I also built the Python neural network, following the tutorial shared by Deeksha
+  * Pure Python, no PyTorch or PyRTL
+* Prepared presentation slide on week's activities for meeting with Deeksha
+
 # Week 6 (11/1-11/7)
-- [ ] Proposal Pt 2 draft by WED 11/7: Proposed Solution
-- [ ] Meetings and goals with Mai, Deeksha, and ArchLab
-- [ ] Read essays and blog post sent by Deeksha
+- [x] Proposal Pt 2 draft by WED 11/7: Proposed Solution
+- [x] Meetings and goals with Mai, Deeksha, and ArchLab
+- [x] Read essays and blog post sent by Deeksha
 - [ ] Learn more about different architectures
-- [ ] Follow along with NN tutorial in Python- learn some more Python syntax
+- [x] Follow along with NN tutorial in Python- learn some more Python syntax
 - [ ] Build a matrix multiplier in PyRTL, build a FIFO if have time
 - [ ] Read more PyRTL documentation!
+
+*Not a very productive research week, due to three back-to-back midterms*
+
+**Wednesday, Nov 7 (2 hrs)**
+* Team meeting:
+ * We worked on refining our proposal: Wrote the proposed solution and edited our introduction according to Deeksha's advice
 
 **Friday, Nov 2 (4 hrs)**
 * Meeting with Mai at 8am: 
