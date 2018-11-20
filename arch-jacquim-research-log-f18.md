@@ -2,13 +2,76 @@
 [*My Reading Log*](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit)
 ---
 ---
+# Week 8 (11/15-11/21)
+- [ ] Make edits on proposal after peer review comments
+- [ ] Convert doc to LaTEX before we work on Week 9 draft!
+- [ ] Read up on estimation functions in PyRTL
+- [ ] More hardware work
+
+**Monday, Nov 19 (1 hr)**
+* Received peer feedback, a lot of edits planned for the proposal- The main points were:
+  * More definitions of NN vocab- thinking about an appendix section
+  * Be more clear about difference between NNs and NN accelerators
+  * More clear problem statement
+
+**Sunday, Nov 18 (2 hrs)**
+* Read HCI proposal draft for peer review, made a lot of notes and filled out handout 
+**Friday, Nov 16 (1.5 hrs)**
+* Meeting with Mai:
+ * Discussed our proposal and the new edits
+ * Mai also mentioned some interesting topics that we might want to expand on in our project:
+ > Overfitting vs underfitting in hardware (consume more energy? area?)
+ > Are there papers on feedforward neural networks in hardware?
+ > If FFNNs are not that common/important should we focus on another type of NN?
+ > Or just use FFNNs as an introduction
+ > GRUs LTSMs could have more impact? Common in machine learning
+   > Single cells could be easy to implement and test
+ > Maybe we also want to look at the effects of overfitting and underfitting in hardware?
+ * As we understood, we're implementing a feedforward neural network specifically because it is simple, but Mai's discussion led us to question whether FFNNs are actually important/significant to NN study as a whole
+   * We decided to take this question to Deeksha in our 11:00 meeting
+   
+* Meeting with Deeksha:
+ * Quick discussion of the paper again, some extra advice from Deeksha and Professor Sherwood
+ * Miscellaneous important things for hardware design:
+   * always write tests
+   * send specific inputs, compare output to expected values
+   * when trying to use PyRTL, search documentation for specific helper functs
+ * Re: Overfitting, underfitting hardware NNs
+   * What are some practical uses for wanting to over/underfit data?
+     * I mentioned that overfitting could be useful if we knew we would always be feeding a NN data that is very similar to the training data
+     * For underfitting, maybe we don't need the NN to be as accurate in some operations
+     * If we can show there are performance benefits to over/underfitting, then maybe we can recommend times where it is appropriate to over/underfit a NN
+   * Obviously, this is sort of an "extra" question, but it was interesting, and Deeksha had us think of what we would need to know before we could start to think about the over/underfitting question
+     * How will we determine over/underfitting? Will we just observe it incidentally as we manipulate other hyperparameters
+     * Is it worthwhile/ useful for our proj? What questions do we need to answer before looking at over/underfitting?
+* **Why FFNNs?**
+    * **Feedforward are one of the simplest NNs, and they are actually used as the fully connected layers from CNNs and RNNs**
+    * **By implementing and analyzing a FFNN, we get info about a key component of several other, more complex NNs (we have a foundation to generalize to other NNs**   
+ * Things to do:
+   * Build hardware neural networks
+   * Which hyperparameters to adjust/how 
+   * How to track results 
+   * Now that we have a general idea of how to use PyTorch for NN design, and PyRTL for NN design, we need to obtain skills for the third part of the project
+     * start estimation stuff- getting preliminary results- get familiar with testing
+     * working on simple circuits- find energy, area, etc of what we have built (matrix multiplier, etc)
+  * Re: the paper: 
+     * Prof Sherwood recommended more clarity on why we care about NN accelerators
+       * More power discussion- comments on Slack
+       * Energy = power integrated over time
+       * Power as thermal load is big concern in all hardware
+        * Think about the intended audience for this proposal 
+* We are being added to a repo on Overleaf so we can collab on LaTEX doc to format our proposal
+
 # Week 7 (11/8-11/14)
-- [ ] Further reading on different architectures
-- [ ] More detailed reading of essays/posts sent by Deeksha
+- [x] Further reading on different architectures
+- [x] More detailed reading of essays/posts sent by Deeksha
 - [ ] Finish matrix multiplier
 - [ ] Learn about FIFO, implement in PyRTL (optional)
-- [ ] Part 3 of paper due by class Wednesday (with edits on first parts): Evaluation and Implementation Plan
-- [ ] Create a timeline for work over next two quarters (Rough idea by class on Wednesday, try to add as much detail as we know about)
+- [x] Part 3 of paper due by class Wednesday (with edits on first parts): Evaluation and Implementation Plan
+- [x] Create a timeline for work over next two quarters (Rough idea by class on Wednesday, try to add as much detail as we know about)
+
+**Wednesday, Nov 14 (2 hrs)**
+* Team meeting! We went over the additions that Maggie and I had made last night, as well as a bunch of comments that Deeksha had left on the most recent iteration of the paper (including the new paragraphs).
 
 **Tuesday, Nov 13 (3.5 hrs)**
 * Worked with Maggie to add two more paragraphs to our intro/related works section, according to Mai's suggestion. We read through our compiled summaries of the literature papers to identify the ones that seemed the most closely related to our research question and wrote a paragraph for each about the neural network hyperparameters discussed and the some specific arhcitectures designed to optimize their behavior. The papers we chose are: ["DNPU: An Energy-Efficient Deep-Learning Processor with Heterogeneous Multi-Core Architecture"](https://ieeexplore.ieee.org/document/8474942) and ["An Energy-Efficient Architecture for Binary Weight Convolutional Neural Networks"](https://ieeexplore.ieee.org/document/8103902)
