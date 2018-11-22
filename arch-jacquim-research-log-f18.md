@@ -33,6 +33,7 @@ loop (It kept saying that the directory didn't exist, and I eventually figured o
     * I wanted to see if more generations = more accuracy, since I noticed that the accuracy seemed to be capping out at 96% with just 3 epochs, so I increased the number of epochs to 10.
       * After it completed 10 epochs, the final accuracy was just 98%. Obviously, this is pretty high, but not such a huge improvement given that I ran it for over 3 times as many epochs. Going back through the output, I noticed that the NN actually hit 98% in its 8th epoch, and was at 97% from its 4th to 7th epochs. So the rate of increase of accuracy is *very* slow. 
       * Speaking of slow, the program itself took a while to complete. The output printed along the way, so I could track the NN's progress in real time, but it took several minutes for execution to finish. I didn't actually time it (I had it running in the background), so maybe the next thing I want to do is track the execution time and see how it grows as I add more epochs.
+      * It would be nice to have matplotlib working when I do that, but there is probably as way to do it with just outputs to terminal
 
 **Monday, Nov 19 (1 hr)**
 * Received peer feedback, a lot of edits planned for the proposal- The main points were:
