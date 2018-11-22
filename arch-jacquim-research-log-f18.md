@@ -7,6 +7,23 @@
 - [ ] Convert doc to LaTEX before we work on Week 9 draft!
 - [ ] Read up on estimation functions in PyRTL
 - [ ] More hardware work
+- [ ] Finish PyTorch MNIST example
+
+**Thursday, Nov 22 (2 hrs)**
+* Happy Thanksgiving!
+* Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. The neural network itself seems to work fine, and I noticed definited improvements in accuracy over 3 epochs:
+  * Epoch 0 (no training, randomly initialized parameters):
+   * Accuracy: 3% to 10% for each run, Avg Loss: ~2.3
+  * Epoch 1:
+   * Accuracy: 94%, Avg Loss: 0.1944
+  * Epoch 2: 
+   * Accuracy: 96%, Avg Loss: 0.1302
+  * Epoch 3:
+   * Accuracy: 96%, Avg Loss: 0.0977
+ * *Problems*: 
+  * I had a few minor problems with syntax, and had some problems saving the state of the model each iteration of the train 
+loop (It kept saying that the directory didn't exist, and I eventually figured out that I needed to use 'results/model.pth' rather than '/results.model.pth'- same for the optimizer state_dict() saves. I also had to create the 'results' directory by hand.)
+  * My main problem is that matplotlib doesn't seem to be working from my terminal. The demo I followed goes on to use matlplotlib for a bunch of other tests, and for viewing some of the MNIST entries before constructing the NN. However, when I used matplotlib, I got *no* output, but no error either. The graphs simply don't display from my terminal. This wasn't a huge deal here, since the printed output to my terminal was enough to see the progress being made by my NN, but I can see how matplotlib would be a tremendous help in the future for graphing and analyzing the output data. I've heard that this is a pretty common problem, so hopefully I can figure it out and get plotting soon.
 
 **Monday, Nov 19 (1 hr)**
 * Received peer feedback, a lot of edits planned for the proposal- The main points were:
