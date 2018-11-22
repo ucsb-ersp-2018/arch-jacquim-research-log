@@ -11,9 +11,10 @@
 
 **Thursday, Nov 22 (2 hrs)**
 * Happy Thanksgiving!
-* Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. The neural network itself seems to work fine, and I noticed definited improvements in accuracy over 3 epochs:
+* Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. This tutorial shows how to build and train a convolutional neural network for image recognition. The neural network itself seems to work fine, and I noticed definited improvements in accuracy over 3 epochs:
   * Epoch 0 (no training, randomly initialized parameters):
-   * Accuracy: 3% to 10% for each run, Avg Loss: ~2.3
+   * Accuracy: 3% to 10% over several runs, Avg Loss: ~2.3
+   * The following results are from just 1 run, since it takes a while to complete all three epochs
   * Epoch 1:
    * Accuracy: 94%, Avg Loss: 0.1944
   * Epoch 2: 
@@ -24,6 +25,14 @@
    * I had a few minor problems with syntax, and had some problems saving the state of the model each iteration of the train 
 loop (It kept saying that the directory didn't exist, and I eventually figured out that I needed to use 'results/model.pth' rather than '/results.model.pth'- same for the optimizer state_dict() saves. I also had to create the 'results' directory by hand.)
    * My main problem is that matplotlib doesn't seem to be working from my terminal. The demo I followed goes on to use matlplotlib for a bunch of other tests, and for viewing some of the MNIST entries before constructing the NN. However, when I used matplotlib, I got *no* output, but no error either. The graphs simply don't display from my terminal. This wasn't a huge deal here, since the printed output to my terminal was enough to see the progress being made by my NN, but I can see how matplotlib would be a tremendous help in the future for graphing and analyzing the output data. I've heard that this is a pretty common problem, so hopefully I can figure it out and get plotting soon.
+* I also started thinking about how we're going to translate PyTorch NN code to PyRTL. I noticed that PyTorch just has pre-built Linear layers in torch.nn, which are used as the fully-connected layers in the CNN that I built for the MNIST example. Going off what Deeksha told us last Friday, I would guess that these Linear layers are essentially feedforward layers/NNs?
+  * Does this mean that we would simply have to figure out how to implement a PyTorch nn.Linear layer in PyRTL for the first part of our experiment. Maybe we can find the implementation for a Linear layer and go about translating it into hardware?
+  
+* I decided to mess around with the CNN that I built. Here's some stuff I did
+  1. Added more training epochs:
+    * I wanted to see if more generations = more accuracy, since I noticed that the accuracy seemed to be capping out at 96% with just 3 epochs, so I increased the number of epochs to 10.
+      * After it completed 10 epochs, the final accuracy was just 98%. Obviously, this is pretty high, but not such a huge improvement given that I ran it for over 3 times as many epochs. Going back through the output, I noticed that the NN actually hit 98% in its 8th epoch, and was at 97% from its 4th to 7th epochs. So the rate of increase of accuracy is *very* slow. 
+      * Speaking of slow, the program itself took a while to complete. The output printed along the way, so I could track the NN's progress in real time, but it took several minutes for execution to finish. I didn't actually time it (I had it running in the background), so maybe the next thing I want to do is track the execution time and see how it grows as I add more epochs.
 
 **Monday, Nov 19 (1 hr)**
 * Received peer feedback, a lot of edits planned for the proposal- The main points were:
