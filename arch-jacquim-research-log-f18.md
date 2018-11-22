@@ -13,14 +13,14 @@
 * Happy Thanksgiving!
 * Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. This tutorial shows how to build and train a convolutional neural network for image recognition. The neural network itself seems to work fine, and I noticed definited improvements in accuracy over 3 epochs:
   * Epoch 0 (no training, randomly initialized parameters):
-   * Accuracy: 3% to 10% over several runs, Avg Loss: ~2.3
-   * The following results are from just 1 run, since it takes a while to complete all three epochs
+    * Accuracy: 3% to 10% over several runs, Avg Loss: ~2.3
+    * The following results are from just 1 run, since it takes a while to complete all three epochs
   * Epoch 1:
-   * Accuracy: 94%, Avg Loss: 0.1944
+    * Accuracy: 94%, Avg Loss: 0.1944
   * Epoch 2: 
-   * Accuracy: 96%, Avg Loss: 0.1302
+    * Accuracy: 96%, Avg Loss: 0.1302
   * Epoch 3:
-   * Accuracy: 96%, Avg Loss: 0.0977
+    * Accuracy: 96%, Avg Loss: 0.0977
  * *Problems*: 
    * I had a few minor problems with syntax, and had some problems saving the state of the model each iteration of the train 
 loop (It kept saying that the directory didn't exist, and I eventually figured out that I needed to use 'results/model.pth' rather than '/results.model.pth'- same for the optimizer state_dict() saves. I also had to create the 'results' directory by hand.)
