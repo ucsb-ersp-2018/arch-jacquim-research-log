@@ -9,10 +9,11 @@
 - [ ] More hardware work
 - [x] Finish PyTorch MNIST example
   - [ ] Some extra stuff with PyTorch CNN (ongoing)
+- [ ] Figure out how to get matplotlib to display from terminal
 
 **Thursday, Nov 22 (3.5 hrs)**
 * Happy Thanksgiving!
-* Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. This tutorial shows how to build and train a convolutional neural network for image recognition. The neural network itself seems to work fine, and I noticed definited improvements in accuracy over 3 epochs:
+* Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. This tutorial shows how to build and train a convolutional neural network for image recognition. The neural network itself seems to work fine, and I noticed definite improvements in accuracy over 3 epochs:
   * Epoch 0 (no training, randomly initialized parameters):
     * Accuracy: 3% to 10% over several runs, Avg Loss: ~2.3
     * The following results are from just 1 run, since it takes a while to complete all three epochs
