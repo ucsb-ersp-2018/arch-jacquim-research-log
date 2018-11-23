@@ -11,7 +11,13 @@
   - [ ] Some extra stuff with PyTorch CNN (ongoing)
 - [ ] Figure out how to get matplotlib to display from terminal
 
-**Thursday, Nov 22 (3.5 hrs)**
+**Friday, Nov 23 (1.5 hrs)**
+* Finally got matplotlib display working! I followed instructions found [here](https://stackoverflow.com/questions/43397162/show-matplotlib-plots-in-ubuntu-windows-subsystem-for-linux)
+    * Install xming for Windows
+    * `sudo apt-get install python3-tk`
+* So far, I just have my program display some of the images from the MNIST dataset, so my next step will be to actually plot some data from my program
+
+**Thursday, Nov 22 (4.5 hrs)**
 * Happy Thanksgiving!
 * Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. This tutorial shows how to build and train a convolutional neural network for image recognition. The neural network itself seems to work fine, and I noticed definite improvements in accuracy over 3 epochs:
   * Epoch 0 (no training, randomly initialized parameters):
