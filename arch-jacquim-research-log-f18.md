@@ -7,9 +7,10 @@
 - [ ] Convert doc to LaTEX before we work on Week 9 draft!
 - [ ] Read up on estimation functions in PyRTL
 - [ ] More hardware work
-- [ ] Finish PyTorch MNIST example
+- [x] Finish PyTorch MNIST example
+  - [ ] Some extra stuff with PyTorch CNN (ongoing)
 
-**Thursday, Nov 22 (2 hrs)**
+**Thursday, Nov 22 (3.5 hrs)**
 * Happy Thanksgiving!
 * Finished PyTorch MNIST NN tutorial, following [this](https://nextjournal.com/gkoehler/pytorch-mnist) demo. This tutorial shows how to build and train a convolutional neural network for image recognition. The neural network itself seems to work fine, and I noticed definited improvements in accuracy over 3 epochs:
   * Epoch 0 (no training, randomly initialized parameters):
@@ -28,13 +29,42 @@ loop (It kept saying that the directory didn't exist, and I eventually figured o
 * I also started thinking about how we're going to translate PyTorch NN code to PyRTL. I noticed that PyTorch just has pre-built Linear layers in torch.nn, which are used as the fully-connected layers in the CNN that I built for the MNIST example. Going off what Deeksha told us last Friday, I would guess that these Linear layers are essentially feedforward layers/NNs?
   * Does this mean that we would simply have to figure out how to implement a PyTorch nn.Linear layer in PyRTL for the first part of our experiment. Maybe we can find the implementation for a Linear layer and go about translating it into hardware?
   
-* I decided to mess around with the CNN that I built. Here's some stuff I did
+* I decided to mess around with the CNN that I built. Here's some stuff I did:
+
   1. Added more training epochs:
     * I wanted to see if more generations = more accuracy, since I noticed that the accuracy seemed to be capping out at 96% with just 3 epochs, so I increased the number of epochs to 10.
       * After it completed 10 epochs, the final accuracy was just 98%. Obviously, this is pretty high, but not such a huge improvement given that I ran it for over 3 times as many epochs. Going back through the output, I noticed that the NN actually hit 98% in its 8th epoch, and was at 97% from its 4th to 7th epochs. So the rate of increase of accuracy is *very* slow. 
       * Speaking of slow, the program itself took a while to complete. The output printed along the way, so I could track the NN's progress in real time, but it took several minutes for execution to finish. I didn't actually time it (I had it running in the background), so maybe the next thing I want to do is track the execution time and see how it grows as I add more epochs.
       * It would be nice to have matplotlib working when I do that, but there is probably as way to do it with just outputs to terminal
+      
+  2. Allowed number of epochs to be set by the user before building and training the CNN:
+     * Changed declaration of `n_epochs` to `n_epochs = int(input("How many epochs? "))`
+ 
+  3. Tracked runtime:
+     * Used the `time python3` command to run my program, which runs it as normal and then prints out the real, user, and system runtimes. 
+       * 1 Epoch (94% accuracy):
+         * `real`: 0m 35.009s
+         * `user`: 1m 2.063s
+         * `sys`: 0m 8.203s
+       * 3 Epochs (96% accuracy):
+         * `real`: 1m 33.407s
+         * `user`: 3m 12.297s
+         * `sys`: 0m 17.453s
+       * 10 Epochs (98% accuracy):
+         * `real`: 4m 58.418s
+         * `user`: 10m 26.578s
+         * `sys`: 0m 53.500s
+       * 15 Epochs (98%):
+         * `real`: 7m 5.096s
+         * `user`: 15m 16.344s
+         * `sys`: 1m 16.172s
+     * According to [this](https://stackoverflow.com/questions/556405/what-do-real-user-and-sys-mean-in-the-output-of-time1) post on StackOverflow, `real` = actual elapsed time, `user` = CPU time outside kernel and inside process, and 'sys' = CPU time in system calls within kernel. From what I understand, the user/sys times can add up to be greater than the real elapsed time with a multicore processor (since processes are split up and execute simultaneously, and there is some additional overhead).
+       * I think my program is single-threaded, so is there some process happening so that I use more than one core in execution? I'll look into that if I have time, but it's not a huge question.
+     * Clearly more epochs = more time, at a signficant rate of increase and almost no improvement in accuracy. I might be able to increase accuracy with larger datasets or more layers, so I might look into that next. 
 
+* This is a more complicated example than what we're ultimately going to build in our project, so I should probably look more into building a standard feedforward NN in PyTorch and find a good sample dataset to run it with (since that's what we'll be dealing with when we build it in PyRTL)
+  * **What kind of processes are FFNNs used for? A CNN is good for image recognition, so MNIST was a good fit, but I need to know what a standalone FFNN can do in order to choose the right training/testing datasets.**
+         
 **Monday, Nov 19 (1 hr)**
 * Received peer feedback, a lot of edits planned for the proposal- The main points were:
   * More definitions of NN vocab- thinking about an appendix section
