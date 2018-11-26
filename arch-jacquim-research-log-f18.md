@@ -11,6 +11,10 @@
   - [ ] Some extra stuff with PyTorch CNN (ongoing)
 - [ ] Figure out how to get matplotlib to display from terminal
 
+**Sunday, Nov 25 (2 hrs)**
+* Met up with Maggie to make some extra edits to proposal- added some clarifications and linked sources more closely to our intended work. While working on this, we noticed Dylan and Dawit working on the doc as well, so we conference-called them and worked together for the rest of the time.
+* Worked on section listing new edits since peer review, for the end of most recent proposal draft
+
 **Friday, Nov 23 (1.5 hrs)**
 * Finally got matplotlib display working! I followed instructions found [here](https://stackoverflow.com/questions/43397162/show-matplotlib-plots-in-ubuntu-windows-subsystem-for-linux)
     * Install xming for Windows
