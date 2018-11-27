@@ -2,14 +2,17 @@
 [*My Reading Log*](https://docs.google.com/document/d/1w88Sf5nNbMch-iYMC7N0dAdIlIEadZRttGgzu_mLrHc/edit)
 ---
 ---
-# Week 8 (11/15-11/21)
-- [ ] Make edits on proposal after peer review comments
+# Week 9 (11/22 - 11/28)
+- [x] Proposal draft by Mon 11/26 at 8:00am
 - [ ] Convert doc to LaTEX before we work on Week 9 draft!
-- [ ] Read up on estimation functions in PyRTL
+- [x] Read up on estimation functions in PyRTL
 - [ ] More hardware work
 - [x] Finish PyTorch MNIST example
-  - [ ] Some extra stuff with PyTorch CNN (ongoing)
-- [ ] Figure out how to get matplotlib to display from terminal
+  - [x] Some extra stuff with PyTorch CNN (ongoing)
+- [x] Figure out how to get matplotlib to display from terminal
+
+**Tuesday, Nov 27 (1 hr)**
+* Read about estimation in PyRTL, played around with the `pyrtl.analysis.estimate.TimingAnalysis` class to output time delay. I used my MAC design because it's fairly simple and has been fully tested already.
 
 **Sunday, Nov 25 (2 hrs)**
 * Met up with Maggie to make some extra edits to proposal- added some clarifications and linked sources more closely to our intended work. While working on this, we noticed Dylan and Dawit working on the doc as well, so we conference-called them and worked together for the rest of the time.
@@ -74,8 +77,14 @@ loop (It kept saying that the directory didn't exist, and I eventually figured o
      * Clearly more epochs = more time, at a signficant rate of increase and almost no improvement in accuracy. I might be able to increase accuracy with larger datasets or more layers, so I might look into that next. 
 
 * This is a more complicated example than what we're ultimately going to build in our project, so I should probably look more into building a standard feedforward NN in PyTorch and find a good sample dataset to run it with (since that's what we'll be dealing with when we build it in PyRTL)
-  * **What kind of processes are FFNNs used for? A CNN is good for image recognition, so MNIST was a good fit, but I need to know what a standalone FFNN can do in order to choose the right training/testing datasets.**
+  * **What kind of processes are FFNNs used for? A CNN is good for image recognition, so MNIST was a good fit, but should know what a standalone FFNN can do in order to choose the right training/testing datasets.**
          
+# Week 8 (11/15-11/21)
+- [x] Make edits on proposal after peer review comments
+- [ ] Convert doc to LaTEX before we work on Week 9 draft!
+- [x] Read up on estimation functions in PyRTL
+- [ ] More hardware work
+
 **Monday, Nov 19 (1 hr)**
 * Received peer feedback, a lot of edits planned for the proposal- The main points were:
   * More definitions of NN vocab- thinking about an appendix section
