@@ -6,7 +6,7 @@
 
 **Monday, 12/3 (1 hr)**
 * Interviewed a grad student, Harmeet Singh (CS64 TA). 
-  * [Meeting Notes] (https://docs.google.com/document/d/14hXVFio688ei0YODKhsRZQv3M_qORed9c9Iu4LbHWDk/edit?usp=sharing)
+  * [Meeting Notes](https://docs.google.com/document/d/14hXVFio688ei0YODKhsRZQv3M_qORed9c9Iu4LbHWDk/edit?usp=sharing)
   * Reflection: Maggie and I had a really interesting talk with Harmeet. I was pretty surprised that grad students are all paid the same amount across the US, given that the cost of living in California is so much higher than it is in other states. It seems especially difficult for international students, as Harmeet explained, since they cannot legally work so often the TA/lab/internship money is all they can get. He discussed how the current political climate is threatening his status as a student- with all the immigration laws and enforcement, he is at a much higher risk of losing his student visa (which could mean he wouldn't be able to complete his degree). He also mentioned that if Trump is re-elected, there would be almost no chance of him being allowed to stay in the US. Overall, it seems like there are a lot more challenges in being an international grad student, but grad school itself seems to be the least of those problems. According to Harmeet, there is a lot more autonomy to set his own deadlines and pursue his own interests, so there is a lot less restriction than in industry or undergraduate school.
 # Week 9 (11/22 - 11/28) **
 - [x] Proposal draft by Mon 11/26 at 8:00am
