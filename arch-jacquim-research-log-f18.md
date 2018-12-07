@@ -4,11 +4,23 @@
 ---
 # Week 10 (11/29- 12/5)
 
+**Wednesday, 12/5 (2 hrs)**
+* Team meeting! Worked on our slides for our final presentation- things are looking pretty good. We have an outline of what we're going to talk about, we just need to refine and order our slides. Dylan made some pretty dope drawings, and things are coming together. Hopefuly we will meet again this week to rehearse our presentation together. 
+
+* Noticed some new comments from Professor Mirza on our proposal- there's still time to make some edits, so hopefully we'll have it sounding even better by the end of Friday.
+
 **Monday, 12/3 (1 hr)**
 * Interviewed a grad student, Harmeet Singh (CS64 TA). 
   * [Meeting Notes](https://docs.google.com/document/d/14hXVFio688ei0YODKhsRZQv3M_qORed9c9Iu4LbHWDk/edit?usp=sharing)
   * Reflection: Maggie and I had a really interesting talk with Harmeet. I was pretty surprised that grad students are all paid the same amount across the US, given that the cost of living in California is so much higher than it is in other states. It seems especially difficult for international students, as Harmeet explained, since they cannot legally work so often the TA/lab/internship money is all they can get. He discussed how the current political climate is threatening his status as a student- with all the immigration laws and enforcement, he is at a much higher risk of losing his student visa (which could mean he wouldn't be able to complete his degree). He also mentioned that if Trump is re-elected, there would be almost no chance of him being allowed to stay in the US. Overall, it seems like there are a lot more challenges in being an international grad student, but grad school itself seems to be the least of those problems. According to Harmeet, there is a lot more autonomy to set his own deadlines and pursue his own interests, so there is a lot less restriction than in industry or undergraduate school.
-# Week 9 (11/22 - 11/28) **
+  
+**Sunday, Dec 2 (2 hrs)**
+* Another team meeting, finished editing the proposal! It's not in LaTEX yet, but the content is much smoother and I feel like out research question is better motivated and supported with sources.
+
+**Friday, Nov 29 (2 hrs)**
+* Another team meeting, instead of an ArchLab meeting. We worked on making the final edits to the proposal, got about halfway through all the comments left by Professor Mirza.
+
+# Week 9 (11/22 - 11/28)
 - [x] Proposal draft by Mon 11/26 at 8:00am
 - [ ] Convert doc to LaTEX before we work on Week 9 draft!
 - [x] Read up on estimation functions in PyRTL
@@ -17,9 +29,12 @@
   - [x] Some extra stuff with PyTorch CNN (ongoing)
 - [x] Figure out how to get matplotlib to display from terminal
 
+**Wednesday, Nov 28 (2hrs)**
+* Team meeting- worked on PyRTL. I'm getting closer to finishing my first matrix multiplier (a 2X2). I feel pretty behind in my PyRTL skills, but I'm worried I won't have a lot of time to improve in the next few weeks, with finals coming up. I'll definitely be working to improve over the winter break.
+
 **Tuesday, Nov 27 (1 hr)**
 * Read about estimation in PyRTL, played around with the `pyrtl.analysis.estimate.TimingAnalysis` class to output time delay. I used my MAC design because it's fairly simple and has been fully tested already.
-* Meeting 
+* Last meeting with Deeksha
 
 **Sunday, Nov 25 (2 hrs)**
 * Met up with Maggie to make some extra edits to proposal- added some clarifications and linked sources more closely to our intended work. While working on this, we noticed Dylan and Dawit working on the doc as well, so we conference-called them and worked together for the rest of the time.
