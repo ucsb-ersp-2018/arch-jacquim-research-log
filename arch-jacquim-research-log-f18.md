@@ -34,7 +34,7 @@
 
 **Tuesday, Nov 27 (1 hr)**
 * Read about estimation in PyRTL, played around with the `pyrtl.analysis.estimate.TimingAnalysis` class to output time delay. I used my MAC design because it's fairly simple and has been fully tested already.
-* Last meeting with Deeksha
+* Last meeting with Deeksha- we talked about what we had accomplished, and what we needed to get done by the end of the quarter and over break. She mentioned that we were a little behind where she expected, so we need to put in more hours to learn PyRTL. Ideally, we should have a working matrix multiplier of some kind by next Friday, but I have a midterm/final that week so I'm not sure I can make that deadline. We agreed to decide later on specific material we'd need to work on over break, since Deeksha was pretty busy with her own work. 
 
 **Sunday, Nov 25 (2 hrs)**
 * Met up with Maggie to make some extra edits to proposal- added some clarifications and linked sources more closely to our intended work. While working on this, we noticed Dylan and Dawit working on the doc as well, so we conference-called them and worked together for the rest of the time.
