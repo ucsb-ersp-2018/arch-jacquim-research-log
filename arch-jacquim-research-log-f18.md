@@ -3,6 +3,10 @@
 ---
 ---
 # Week 10 (11/29- 12/5)
+- [x] Interview grad student by end of Friday
+- [ ] Final proposal by end of Friday 12/7
+- [ ] Final presentation Monday 12/10 at 5:30pm
+- [ ] Finish matrix multiplier
 
 **Wednesday, 12/5 (2 hrs)**
 * Team meeting! Worked on our slides for our final presentation- things are looking pretty good. We have an outline of what we're going to talk about, we just need to refine and order our slides. Dylan made some pretty dope drawings, and things are coming together. Hopefuly we will meet again this week to rehearse our presentation together. 
