@@ -44,5 +44,5 @@
 Plan hardware -- what kind of modules do you need? If you don't have them, build them. How would you connect these? 
 
 **Saturday, 1/19 (2.5 hrs)**
-* Team meeting. Dawit shared a site he found that offered a way to build an integer-based NN, which we should be able to apply to make an activation function that approximated the distribution of a sigmoid using only whole numbers. We will have to develop our own loss functions and backpropagation that avoid floating points as well, however.
+* Team meeting. Dawit shared [this](http://sharpneat.sourceforge.net/research/integer-neuralnet/integer-neuralnet.html) site he found that offered a way to build an integer-based NN, which we should be able to apply to make an activation function that approximated the distribution of a sigmoid using only whole numbers. We will have to develop our own loss functions and backpropagation that avoid floating points as well, however.
 * Split up the work so that Maggie and I are working on making the loss and backprop functions with integer values, and Dylan and Dawit will work on figuring out how to access and update the weights, as well as incorporating the activation function Dawit found.
