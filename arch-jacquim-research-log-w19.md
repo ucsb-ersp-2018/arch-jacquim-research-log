@@ -1,8 +1,68 @@
+## Week 5 (2/4/19 - 2/10/19)
+# Weekly Goals: 
+* [ ] Read OpenTPU README on ArchLab github more closely
+* [ ] Access ground truths of MNIST images in test set
+* [ ] Determine which vectors are correct for each input
+* [ ] Figure out how to speed up operations on NN simulation, and measure accuracy of outputs
+* [ ] Speed up simulation and computation for PyRTL NN!
+  * [ ] Write a block matrix algorithm in numpy, figure out how to translate into PyRTL
+* [ ] Have presentable results on first experiments and process by Friday, Feb 8
+  
+**Tuesday 2/5 (1 hr)**
+* Met with Maggie, figured out how to access ground truths for each image in the 4-dimensional tensors
+* While trying to figure out how to interpret the output vectors to compare them to the ground truth to determine accuracy, we met with Dylan. Turns out he had already written a function to do so- checks for the largest value in the 10-vector, and the index of that value is the network's guess for that image (each item in the vector corresponds to the "confidence" in that guess, so the most confident is taken as the final answer).
+* We're not certain if this will actually work, since the inputs and weights are scaled so much, and we can't tell yet since we can't get the NN to run to completion
+
+
 ## Week 4 (1/28/19 - 2/3/19)
 # Weekly Goals:
-* [ ] Build a hardware NN for *inference only*
+* [X] Build a hardware NN for *inference only*
 * [ ] Run hardware NN on MNIST test dataset and record accuracy, latency, etc
-* [ ] Have presentable results on first experiments and process by Friday, Feb 1
+
+**Saturday, 2/2 (2 hrs)**
+* Met up briefly to discuss our goals and assign portions to group members
+ * Maggie and I will be determining how to get the ground truths and measure the accuracy of the PyRTL NN
+* Dylan ran the PyRTL NN later for a few hours, but later informed us that his laptop didn't have enough RAM to even get past the simulation step
+ * Taking so long to simulate the network in hardware, the program didn't even get to the multiplication/ inference step
+ * I suggested switching the implementation to block matrices to see if it would speed things up, but Dylan doesn't think that will speed up the actual simulation of the hardware
+ * We also decided to only use the first 100 elements in the test dataset, rather than 10,00
+
+**Friday, 2/1 (2 hrs)**
+* My suspicion was correct- each data item = 4 images
+* Dylan has started feeding in individual vectors into the NN hardware we currently have, but it is very slow. Inputs are scaled up by 256 (to shift floating points values into RGB form, as images are usually stored)
+* Proposed block matrices as a possible solution to speed up matrix operations
+ * A few benefits from using block matrices: Faster matrix multiplication, smaller area and power usage (since we can reuse a smaller matrix multiplier several times, rather than creating a single large multiplier in hardware
+* Met with Deeksha- according to the milestones chart, we need PyRTL data by the end of *next* week
+* Notes from meeting with Deeksha below:
+
+   > Read ways to do quantization with neural networks to avoid losing precision/ accuracy
+   > Make some graphs for PyTorch data- Accuracy vs. Num Epochs (should be decreasing)
+   > Get accuracy up on PyTorch- run for about an hr of epochs- aim for at least high 80s in accuracy
+   > Consider adding biases- Ax+b makes more accurate, b is the bias
+       >Shifting up and down- can get biases in loss function, updated thru backpropagation
+   > Weights/bias are trainable parameters, input is fixed
+   > If pyrtl is too slow, break down into smaller block matrices 
+   > Consider different ways of shifting data to all positive nums (renormalize)
+   > PyRTL/python profiler?- tell us what program is doing while it is doing it- track memory leaks, loops, etc
+    
+
+
+**Thursday, 1/30 (4.5 hrs)**
+* Read through an overview of the microarchitecture of the ArchLab's OpenTPU
+* Spent a few hours reading pytorch documentation and tracing through the PyTorch NN code. Some observations:
+ * The dataloader is being iterated thru only 2500 times, but the size of the dataset in the test dataloader is definitely 10,000
+ * The batch size is 4- doesn't seem like a coincidence that the tensors are coming in sets of 4
+ * I tried accessing each "dimension" of the tensors, and realized that each is a 28\*28 matrix with values between 0 and 1, exactly as expected for a single MNIST tensor
+   * going off these observations, it would make sense for each "dimension" to represent a single MNIST image
+ * Looking at the pytorch code behavior in the training and testing functions- it looks like the linear layer is taking in the full tensor, reshaped to a 4\*784 matrix, which it must be splitting up into 4 individual input vectors, since it requires vector inputs for the matrix math
+    * Therefore, I'm pretty sure my idea was correct, and each data item in the dataloader holds 4 images' worth of information
+ * Learned how to use .view() to shape each square matrix into a 784-vector
+* Later, we had a full team meeting- still figuring out what to do with 4d tensors
+ * Some disagreement over my idea- we read somewhere else that each dimension should be a color channel, so we weren't sure if the 4 28\*28 matrices all provided information about the same file (if we needed all 4 dimensions to describe a single image), or each corresponded to a different one and they were simply given in batches of 4
+ 
+**Wednesday, 1/29 (2.5 hrs)**
+* Met up with Maggie and Dylan- fed the trained weights into our PyRTL NN. We are scaling each weight by 1000 so we can work with whole numbers.
+* We thought we would easily be able to access the tensors that the MNIST images were translated into, but the dataloader items gave us 4-dimensional tensors, which we hadn't been expecting. We couldn't determine what to do with each set of tensors, or why they were stored in 4 dimensions.
 
 ## Week 3 (1/21/19 - 1/27/19)
 # Weekly Goals:
