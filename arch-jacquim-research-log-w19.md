@@ -11,6 +11,7 @@
 **Wednesday, 2/6 (5 hrs)**
 * Met with Dawit to create some plots for our PyTorch model. We set up a plot that charts Accuracy vs. Num Epochs and tested it with a loop of up to 5 epochs (data for 0, 1, ...5 epochs worth of training on the same model), and the chart is looking pretty good. Dawit is later going to set the loop to a much higher number and let it run all night, so we can hopefully achieve >80% accuracy and get a dope graph at the same time.
 * Worked on block matrix algorithm as a possible solution to RAM problem. Wrote and tested the entire algorithm in `numpy` (pure Python, basically), then created a new branch of all our up-to-date code and reworked the PyRTL setup to incorporate my block matrix solution. It's running right now, but I'll know whether it worked or if I don't have enough RAM in the (later) morning. 
+* **Followup:** The program did not finish running, but it told me there was a runtime error after I hit ctrl-C to end it. I don't know why this didn't end the program.
   
 **Tuesday 2/5 (1 hr)**
 * Met with Maggie, figured out how to access ground truths for each image in the 4-dimensional tensors
