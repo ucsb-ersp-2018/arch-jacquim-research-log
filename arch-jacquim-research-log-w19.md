@@ -1,11 +1,11 @@
 ## Week 5 (2/4/19 - 2/10/19)
 # Weekly Goals: 
 * [ ] Read OpenTPU README on ArchLab github more closely
-* [ ] Access ground truths of MNIST images in test set
-* [ ] Determine which vectors are correct for each input
-* [ ] Figure out how to speed up operations on NN simulation, and measure accuracy of outputs
-* [ ] Speed up simulation and computation for PyRTL NN!
-  * [ ] Write a block matrix algorithm in numpy, figure out how to translate into PyRTL
+* [x] Access ground truths of MNIST images in test set
+* [x] Determine which vectors are correct for each input
+* [x] Speed up simulation and computation for PyRTL NN!
+  * [x] Write a block matrix algorithm in numpy, figure out how to translate into PyRTL
+* [ ] Measure accuracy of outputs from PyRTL NN
 * [ ] Have presentable results on first experiments and process by Friday, Feb 8
 
 **Thursday, 2/7 (6 hrs)**
