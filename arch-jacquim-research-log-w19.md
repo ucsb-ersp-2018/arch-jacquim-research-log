@@ -8,8 +8,13 @@
   * [ ] Write a block matrix algorithm in numpy, figure out how to translate into PyRTL
 * [ ] Have presentable results on first experiments and process by Friday, Feb 8
 
-**Thursday, 2/7 (??? hrs)**
+**Thursday, 2/7 (6 hrs)**
 * **Morning followup:** The program did not finish running, but it told me there was a syntax error after I hit ctrl-C to end it. I don't know why this didn't end the program.
+* Fixed the syntax errors- I had forgotten to change a few variables that Dylan had declared that I had decided not to use (since I am not using the `getWeights` and `getImage` functions- everything is being done within the main for now). Turns out I had the dimensions of the matrices reversed, so I had to go back and adjust the dimensions and loops to fix that. 
+* I'm just testing with a single image for now. If it works through the whole PyRTL NN, then it should be easy to wrap everything in a loop to iterate through the test dataset.
+* I was able to get through inference for a whole input image, and we have an output vector now! There were a few PyRTL-related syntax errors before we could get to the simulation step. 
+* Runtime is very slow- around 10 minutes for the whole program (until it hits an error) and that's just for one image. Even with just 100 images from the dataset, rather than 10,000, that's pretty slow. Much faster than with the monolithic matrix multiplier tho- we're finally getting through the "forward" function (all the multiplication/ relu)
+* Finally got to simulation, and we are hitting a PyRTL internal error. Not sure how to resolve right now :(
 
 **Wednesday, 2/6 (5 hrs)**
 * Met with Dawit to create some plots for our PyTorch model. We set up a plot that charts Accuracy vs. Num Epochs and tested it with a loop of up to 5 epochs (data for 0, 1, ...5 epochs worth of training on the same model), and the chart is looking pretty good. Dawit is later going to set the loop to a much higher number and let it run all night, so we can hopefully achieve >80% accuracy and get a dope graph at the same time.
