@@ -1,3 +1,62 @@
+## Week 7
+# Weekly Goals:
+* [x] Simulate full PyRTL NN
+* [x] Implement block matrices
+* [ ] Get accuracy in both cases
+
+**Wednesday, 2/20 (2 hours)**
+* Dawit implemented and ran the NN using block matrices
+ * Just one image - 2 hours, area = 103.8 squared mm (less than half original area!)
+* Running it currently with all 10000 inputs- still awaiting accuracy
+* Maggie and I made numpy changes to NN and are running it now as well
+
+**Tuesday, 2/19 (1.5 hours)**
+* Dylan ran the full NN with all 10000 inputs
+ * Ran for 8 hours, final result was an accuracy of **0.11%, area 276 squared mm** (oof)
+ * Potential error in 2s complement usage? Or this is a math error in our matrix multiplication
+ * Dylan will run it, taking out 2s complement on output (where it should not be used)
+ * Dawit will implement the block martrix algorithm I gave him and run the NN with that
+ * Maggie and I will add an additional step the the neural network, where we do the same operation in numpy alongside each call to forward so we can see what value to expect if the math is all correct
+ 
+**Monday, 2/18**
+* No hours for me personally today, but Maggie and Dylan were able to get through simulation of the NN with a single full-size iage by removing the synthesis step. We don't need that for now, and we'll still get area and time estimates
+* Finished rewriting block matrix algorithm for the new setup
+
+## Week 6 (2/11/19 - 2/17/19)
+# Weekly Goals:
+ * [x] Figure out PyRTL internal error
+ * [~] Get PyRTL NN to simulate fully
+ * [ ] Get accuracy of PyRTL NN
+ 
+**Sunday, 2/18 (2.5 hrs)**
+* Met up with Dawit- focused on cleaning up PyRTL NN and getting it to simulate
+* For testing purposes, we set the matrix size to 5 within the NN and were eventually able to fully simulate and synthesize with just one input image
+ * Got an area and accuracy, but not useful since the PyTorch NN was not trained (so we had random weights) and we weren't dealing with the full-sized inputs and vectors
+* Then we scaled everything up to 784, and tried to run with just one image
+ * While waiting, started planning the block matrix algorithm we will use in the near future
+ * The NN got stuck in synthesis for over an hour, then Dawit's laptop ran out of memory and the program crashed 
+ 
+**Saturday, 2/16 (2 hrs)**
+* Team meeting- Dylan walked us through his code so we are all up-to-date on the changes
+  * Weights have been moved to memory now, using a class that stores a PyRTLMatrix in a memblock
+  * PyRTL NN has been separated into a different file
+* The storage class is tested, but NN stil hitting "op_param out of bounds" error
+ 
+**Friday, 2/15 (1 hr)**
+* Meeting with Mai and Professor Mirza- we discussed the errors blocking our progress and explaing some of our NN math processes and code
+* Discussed organization for our team- Weekly code reviews, working in pairs throughout the week
+
+**Thursday, 2/14 (6 hrs)**
+* On Wed, Maggie was able to get rid of op_param error by adjusting bitwidth to 11 for small copy- we still don't know what was causing it
+* Thurs team meeting: Still haven't figured out the internal error, so we met as a team to discuss some different approaches
+ * Dylan and I discussed just cutting out the numpy stuff altogether- store the weight matrix into memory and load it when we need it
+  * This way, everything will be in hardware, without having to rely on external inputs from software (numpy)
+ * I'm not sure this will solve the error, but it's definitely a step we need to take eventually
+ * If it works, then we will know that the problem was definitely due to numpy
+* refactoring nn again to use memblocks- store weights in pure hardware to get rid of numpy operations (wed+thurs)
+* I finally understand pyrtl simulation! In all of our previous tests, we had not been been putting actual inputs in the simulation, and I realized I didn't really understand the sim process that well. After working on simulating a small-matrix NN, I finally understand how it works.
+* I have made an issue on the PyRTL github repo to hopefully get more information about our op_param error. If we can learn in what cases this might be triggered, we will know where to look to resolve it
+
 ## Week 5 (2/4/19 - 2/10/19)
 # Weekly Goals: 
 * [ ] Read OpenTPU README on ArchLab github more closely
