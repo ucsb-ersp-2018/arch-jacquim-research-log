@@ -1,3 +1,8 @@
+### The logs from Weeks 8-10 have been reconstructed from our weekly slides+goals, group messages, and my recollections
+
+## Week 10:
+## Week 9:
+## Week 8:
 ## Week 7
 # Weekly Goals:
 * [x] Simulate full PyRTL NN
